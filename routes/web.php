@@ -12,7 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('login', function(){
+    return view('auth/login');
+})->name('login');
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group([
+    'middleware' => 'auth',
+], function() {
+    Route::get('/', 'DashboardController@index')
+        ->defaults('sidebar', 1)
+        ->defaults('icon', 'fas fa-list')
+        ->defaults('name', 'Dashboard')
+        ->defaults('roles', array('Admin'))
+        ->name('dashboard')
+        ->defaults('href', '/');
 });
