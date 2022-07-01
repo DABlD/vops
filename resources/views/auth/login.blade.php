@@ -24,7 +24,7 @@
 				<form class="login100-form validate-form" method="POST" action="{{ route('login'); }}">
 					@csrf
 					<span class="login100-form-title">
-						Login
+						Welcome
 					</span>
 
 					<div class="wrap-input100">
@@ -48,6 +48,9 @@
 							Login
 						</button>
 					</div>
+					
+					{{-- <div class="container-register100-form-btn">
+					</div> --}}
 
 					<div class="text-center p-t-12">
 						<span class="txt1">
@@ -59,9 +62,9 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						<a class="txt2" href="{{ route('register') }}">
+							Create your account
+							<i class="fas fa-arrow-right"></i>
 						</a>
 					</div>
 				</form>
@@ -84,7 +87,6 @@
 				icon: 'error',
 				title: "{{ $errors->first('auth') }}",
 			});
-			console.log("{{ $errors->first('auth') }}");
 		@endif
 	</script>
 

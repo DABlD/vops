@@ -1,59 +1,102 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ "System Name | " . "Login" }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+    <link rel="stylesheet" href="{{ asset('fonts/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/auth/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/auth/hamburgers.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/auth/util.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/auth/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sweetalert2.min.css') }}">
+</head>
+<body>
+    
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="{{ asset("images/default_avatar.png"); }}" alt="IMG">
+                </div>
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
+                <form class="login100-form validate-form" method="POST" action="{{ route('register'); }}">
+                    @csrf
+                    <span class="login100-form-title">
+                        Registration
+                    </span>
 
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
+                    <div class="wrap-input100">
+                        <input class="input100" type="text" name="username" placeholder="Username" :value="old('username')'">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="far fa-id-card"></i>
+                        </span>
+                    </div>
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                    <div class="wrap-input100">
+                        <input class="input100" type="password" name="password" placeholder="Password">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100">
+                        <input class="input100" type="password" name="password_confirmation" placeholder="Confirm Password">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="container-register100-form-btn">
+                        <button class="register100-form-btn">
+                            Register
+                        </button>
+                    </div>
+                    
+                    {{-- <div class="container-register100-form-btn">
+                    </div> --}}
+
+                    <div class="text-center p-t-12">
+                        <span class="txt1">
+                        </span>
+                        <a class="txt2" href="#">
+                        </a>
+                    </div>
+
+                    <div class="text-center p-t-136">
+                        <a class="txt2" href="{{ route('login') }}">
+                            Already have an account?
+                        </a>
+                    </div>
+                </form>
             </div>
+        </div>
+    </div>
 
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/auth/tilt.js') }}"></script>
+    <script src="{{ asset('js/auth/main.js') }}"></script>
+    <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
+    <script >
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+        @if($errors->all())
+            Swal.fire({
+                icon: 'error',
+                html: `
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}<br/>
+                    @endforeach
+                `,
+            });
+        @endif
+    </script>
+</body>
+</html>
