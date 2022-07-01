@@ -22,6 +22,18 @@ Route::group([
         'middleware' => 'auth',
     ], function() {
         Route::get('/', "DashboardController@index")->name('dashboard');
+
+        // USER ROUTES
+        $cname = "user";
+        Route::group([
+                'as' => "$cname.",
+                'prefix' => "$cname/"
+            ], function () use($cname){
+                Route::get("get/", ucfirst($cname) . "Controller@get")->name('get');
+                Route::post("store/", ucfirst($cname) . "Controller@store")->name('store');
+                Route::post("update/", ucfirst($cname) . "Controller@update")->name('update');
+            }
+        );
     }
 );
 

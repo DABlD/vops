@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
         <title>{{ "System Name | " . "Page" }}</title>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,8 +14,11 @@
         <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/overlayScrollbar.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/sweetalert2.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/flatpickr.min.css') }}">
 
-        @stack('styles')
+        @yield('styles')
+
     </head>
 
     <body class="hold-transition sidebar-mini layout-fixed">
@@ -53,7 +57,16 @@
             </footer> -->
         </div>
 
-        @stack('scripts');
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
+        <script>$.widget.bridge('uibutton', $.ui.button)</script>
+        <script src="{{ asset('js/bootstrap-bundle.min.js') }}"></script>
+        <script src="{{ asset('js/moment.min.js') }}"></script>
+        <script src="{{ asset('js/temposdusmus-bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/overlayScrollbar.min.js') }}"></script>
+        <script src="{{ asset('js/adminlte.min.js') }}"></script>
+        <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
 
         <script>
             @if(session('success'))
@@ -63,14 +76,6 @@
             @endif
         </script>
 
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
-        <script>$.widget.bridge('uibutton', $.ui.button)</script>
-        <script src="{{ asset('js/bootstrap-bundle.min.js') }}"></script>
-        <script src="{{ asset('js/moment.min.js') }}"></script>
-        <script src="{{ asset('js/temposdusmus-bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/overlayScrollbar.min.js') }}"></script>
-        <script src="{{ asset('js/adminlte.min.js') }}"></script>
-        <script src="{{ asset('js/custom.js') }}"></script>
+        @stack('scripts');
     </body>
 </html>

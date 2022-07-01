@@ -1,3 +1,5 @@
+let errorColor = "#f76c6b";
+
 function ss(title = "", text = ""){
 	Swal.fire({
 		icon: "success",

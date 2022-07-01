@@ -10,7 +10,7 @@
                 <img src="{{ asset('images/default_avatar.png') }}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">
+                <a href="#" class="d-block" id="profile">
                     {{ auth()->user()->fname }} {{ auth()->user()->lname }}
                 </a>
             </div>
@@ -66,3 +66,105 @@
         </nav>
     </div>
 </aside>
+
+@push('scripts')
+    <script src="{{ asset('js/flatpickr.min.js') }}"></script>
+    <script>
+        $('#profile').on('click', () => {
+            $.ajax({
+                url: "{{ route('user.get') }}",
+                data: {
+                    cols: 'users.*',
+                    where: ['id', {{ auth()->user()->id }}]
+                },
+                success: user => {
+                    user = JSON.parse(user)[0];
+
+                    function input(name, placeholder, value, type = "text"){
+                        return `
+                            <div class="row input">
+                                <div class="col-md-2">
+                                    ${placeholder}
+                                </div>
+                                <div class="col-md-10">
+                                    <input type="${type}" name="${name}" placeholder="Enter ${placeholder}" class="form-control"} value="${value ?? ""}">
+                                </div>
+                            </div>
+                        `;
+                    }
+
+                    Swal.fire({
+                        html: `
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-3">
+                                    <img src="${user.avatar}" alt="User Avatar" width="200px" height="200px">
+                                </div>
+                                <div class="col-md-9">
+                                    ${input("fname", "First Name", "{{ auth()->user()->fname }}")}
+                                    ${input("mname", "Middle Name", "{{ auth()->user()->mname }}")}
+                                    ${input("lname", "Last Name", "{{ auth()->user()->lname }}")}
+                                    ${input("email", "Email", "{{ auth()->user()->email }}")}
+                                    ${input("birthday", "Birthday", "{{ auth()->user()->birthday }}")}
+                                    ${input("gender", "Gender", "{{ auth()->user()->gender }}")}
+                                    ${input("address", "Address", "{{ auth()->user()->address }}")}
+                                    ${input("contact", "Contact #", "{{ auth()->user()->contact }}", "number")}
+                                </div>
+                            </div"
+                        `,
+                        width: "1000px",
+                        confirmButtonText: 'Update',
+                        @if(auth()->user()->fname == null && auth()->user()->lname == null)
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                        @else
+                            showCancelButton: true,
+                            cancelButtonColor: errorColor,
+                            cancelButtonText: 'Exit',
+                        @endif
+                        didOpen: () => {
+                            $('#swal2-html-container').css('overflow', 'hidden');
+                            $('#swal2-html-container .col-md-2').css('margin', 'auto');
+                            $('#swal2-html-container .col-md-2').css('text-align', 'left');
+                            $('.input.row').css('margin-bottom', '5px');
+
+                            $('[name="birthday"]').flatpickr({
+                                altInput: true,
+                                altFormat: 'F j, Y',
+                                dateFormat: 'Y-m-d',
+                            })
+                        }
+                    }).then(result => {
+                        if(result.value){
+                            let data = {
+                                id: "{{ auth()->user()->id }}",
+                                fname: $("[name='fname']").val(),
+                                mname: $("[name='mname']").val(),
+                                lname: $("[name='lname']").val(),
+                                email: $("[name='email']").val(),
+                                birthday: $("[name='birthday']").val(),
+                                gender: $("[name='gender']").val(),
+                                address: $("[name='address']").val(),
+                                contact: $("[name='contact']").val(),
+                            };
+
+                            data._token = $('meta[name="csrf-token"]').attr('content');
+
+                            $.ajax({
+                                url: "{{ route('user.update') }}",
+                                data: data,
+                                type: "POST",
+                                success: result => {
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        });
+
+        @if(auth()->user()->fname == null && auth()->user()->lname == null)
+            $('#profile').click();
+        @endif
+    </script>
+@endpush
