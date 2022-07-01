@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/overlayScrollbar.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+
+        @stack('styles')
     </head>
 
     <body class="hold-transition sidebar-mini layout-fixed">
@@ -31,8 +33,8 @@
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="{{ route('/') }}">Home</a></li>
-                                    <li class="breadcrumb-item active">{{ $title }}</li>
+                                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                                    <li class="breadcrumb-item active">{{ $title ?? "Title" }}</li>
                                 </ol>
                             </div>
                         </div>
@@ -50,6 +52,8 @@
             </div>
             </footer> -->
         </div>
+
+        @stack('scripts');
 
         <script>
             @if(session('success'))

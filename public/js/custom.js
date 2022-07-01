@@ -1,6 +1,6 @@
 function ss(title = "", text = ""){
-	swal({
-		type: "success",
+	Swal.fire({
+		icon: "success",
 		title: title,
 		text: text,
 		timer: 800,
@@ -9,8 +9,8 @@ function ss(title = "", text = ""){
 };
 
 function se(title = "", text = ""){
-	swal({
-		type: "danger",
+	Swal.fire({
+		icon: "danger",
 		title: title,
 		text: text,
 		timer: 800,
@@ -19,8 +19,8 @@ function se(title = "", text = ""){
 };
 
 function sc(title = "", text = ""){
-	swal({
-		type: "danger",
+	Swal.fire({
+		icon: "danger",
 		title: title,
 		text: text,
 	});

@@ -7,11 +7,22 @@
 
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="#" role="button">
-                <i class="fa-solid fa-right-from-bracket">
-                    Sign Out
-                </i>
-            </a>
+            <form action="{{ route('logout') }}" method="POST" id="logoutForm">
+                @csrf
+                <a class="nav-link" role="button" onclick="logout()">
+                    <i class="fa-solid fa-right-from-bracket">
+                        Sign Out
+                    </i>
+                </a>
+            </form>
         </li>
     </ul>
 </nav>
+
+@push('scripts')
+    <script>
+        function logout(){
+            $('#logoutForm').submit();
+        }
+    </script>
+@endpush
