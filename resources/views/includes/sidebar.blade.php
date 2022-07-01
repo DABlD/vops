@@ -80,19 +80,6 @@
                 success: user => {
                     user = JSON.parse(user)[0];
 
-                    function input(name, placeholder, value, type = "text"){
-                        return `
-                            <div class="row input">
-                                <div class="col-md-2">
-                                    ${placeholder}
-                                </div>
-                                <div class="col-md-10">
-                                    <input type="${type}" name="${name}" placeholder="Enter ${placeholder}" class="form-control"} value="${value ?? ""}">
-                                </div>
-                            </div>
-                        `;
-                    }
-
                     Swal.fire({
                         html: `
                             <div class="row" style="margin-top: 30px;">
@@ -100,14 +87,14 @@
                                     <img src="${user.avatar}" alt="User Avatar" width="200px" height="200px">
                                 </div>
                                 <div class="col-md-9">
-                                    ${input("fname", "First Name", "{{ auth()->user()->fname }}")}
-                                    ${input("mname", "Middle Name", "{{ auth()->user()->mname }}")}
-                                    ${input("lname", "Last Name", "{{ auth()->user()->lname }}")}
-                                    ${input("email", "Email", "{{ auth()->user()->email }}")}
-                                    ${input("birthday", "Birthday", "{{ auth()->user()->birthday }}")}
-                                    ${input("gender", "Gender", "{{ auth()->user()->gender }}")}
-                                    ${input("address", "Address", "{{ auth()->user()->address }}")}
-                                    ${input("contact", "Contact #", "{{ auth()->user()->contact }}", "number")}
+                                    ${input("fname", "First Name", "{{ auth()->user()->fname }}", 2, 10)}
+                                    ${input("mname", "Middle Name", "{{ auth()->user()->mname }}", 2, 10)}
+                                    ${input("lname", "Last Name", "{{ auth()->user()->lname }}", 2, 10)}
+                                    ${input("email", "Email", "{{ auth()->user()->email }}", 2, 10)}
+                                    ${input("birthday", "Birthday", "{{ auth()->user()->birthday }}", 2, 10)}
+                                    ${input("gender", "Gender", "{{ auth()->user()->gender }}", 2, 10)}
+                                    ${input("address", "Address", "{{ auth()->user()->address }}", 2, 10)}
+                                    ${input("contact", "Contact #", "{{ auth()->user()->contact }}", 2, 10, "number")}
                                 </div>
                             </div"
                         `,
@@ -120,13 +107,12 @@
                             showCancelButton: true,
                             cancelButtonColor: errorColor,
                             cancelButtonText: 'Exit',
+
+                            showDenyButton: true,
+                            denyButtonColor: successColor,
+                            denyButtonText: 'Change Password',
                         @endif
                         didOpen: () => {
-                            $('#swal2-html-container').css('overflow', 'hidden');
-                            $('#swal2-html-container .col-md-2').css('margin', 'auto');
-                            $('#swal2-html-container .col-md-2').css('text-align', 'left');
-                            $('.input.row').css('margin-bottom', '5px');
-
                             $('[name="birthday"]').flatpickr({
                                 altInput: true,
                                 altFormat: 'F j, Y',
@@ -156,6 +142,48 @@
                                 success: result => {
                                     window.location.reload();
                                 }
+                            });
+                        }
+                        else if(result.isDenied){
+                            Swal.fire({
+                                html: `
+                                    ${input("password", "Password", null, 5, 7, 'password')}
+                                    ${input("password_confirmation", "Confirm Password", null, 5, 7, 'password')}
+                                `,
+                                confirmButtonText: 'Update',
+                                showCancelButton: true,
+                                cancelButtonColor: errorColor,
+                                cancelButtonText: 'Exit',
+                                width: "500px",
+                                preConfirm: () => {
+                                    swal.showLoading();
+                                    return new Promise(resolve => {
+                                        setTimeout(() => {
+                                            if($("[name='password']").val() == "" || $("[name='password_confirmation']").val() == ""){
+                                                Swal.showValidationMessage('Fill all fields');
+                                            }
+                                            else if($("[name='password']").val().length < 8){
+                                                Swal.showValidationMessage('Password must at least be 8 characters');
+                                            }
+                                            else if($("[name='password']").val() != $("[name='password_confirmation']").val()){
+                                                Swal.showValidationMessage('Password do not match');
+                                            }
+                                        resolve()}, 500);
+                                    });
+                                },
+                            }).then(() => {
+                                $.ajax({
+                                    url: "{{ route('user.updatePassword') }}",
+                                    data: {
+                                        id: "{{ auth()->user()->id }}",
+                                        password: $("[name='password']").val(),
+                                        _token: $('meta[name="csrf-token"]').attr('content')
+                                    },
+                                    type: "POST",
+                                    success: result => {
+                                        ss("Successfully changed password");
+                                    }
+                                });
                             });
                         }
                     });

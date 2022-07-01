@@ -12,3 +12,16 @@
 .nav-treeview{
 	margin-left: 20px;
 }
+
+#swal2-html-container{
+	overflow: hidden;
+}
+
+#swal2-html-container .iLabel, #swal2-html-container .iInput{
+	margin: auto;
+	text-align: left;
+}
+
+#swal2-html-container .iRow{
+	margin-top: 5px;
+}

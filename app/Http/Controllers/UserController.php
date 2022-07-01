@@ -40,6 +40,12 @@ class UserController extends Controller
         DB::table('users')->where('id', $req->id)->update($req->except(['id', '_token']));
     }
 
+    public function updatePassword(Request $req){
+        $user = User::find(auth()->user()->id);
+        $user->password = $req->password;
+        $user->save();
+    }
+
     private function _view($view, $data = array()){
         return view('users.' . $view, $data);
     }

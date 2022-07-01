@@ -45,4 +45,8 @@ class User extends Authenticatable
     protected $dates = [
         'created_at', 'updated_at', 'deleted_at', 'birthday', 'email_verified_at'
     ];
+
+    public function setPasswordAttribute($value) {
+        $this->attributes['password'] = Hash::make($value);
+    }
 }
