@@ -82,10 +82,14 @@
 			scale: 1.1
 		})
 
-		@if($errors->has('auth'))
+		@if($errors->all())
 			Swal.fire({
 				icon: 'error',
-				title: "{{ $errors->first('auth') }}",
+                html: `
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}<br/>
+                    @endforeach
+                `,
 			});
 		@endif
 	</script>
