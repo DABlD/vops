@@ -23,6 +23,15 @@ Route::group([
     ], function() {
         Route::get('/', "DashboardController@index")->name('dashboard');
 
+
+        Route::get('/', 'DashboardController@index')
+            ->defaults('sidebar', 1)
+            ->defaults('icon', 'fas fa-list')
+            ->defaults('name', 'Dashboard')
+            ->defaults('roles', array('Admin'))
+            ->name('dashboard')
+            ->defaults('href', '/');
+
         // USER ROUTES
         $cname = "user";
         Route::group([

@@ -27,22 +27,13 @@
                         @if(in_array(Auth::user()->role, $route->defaults['roles']) || (isset($route->defaults['sped']) && in_array(auth()->user()->id, $route->defaults['sped'])))
                             <li class="nav-item {{ str_contains(request()->path(), $route->uri) ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ url($route->defaults['href']) }}">
-                                    <i class="nav icon {{ $route->defaults['icon'] }}"></i> 
+                                    <i class="nav-icon {{ $route->defaults['icon'] }}"></i> 
                                     <p>{{ $route->defaults['name'] }}</p>
                                 </a>
                             </li>
                         @endif
                     @endif
                 @endforeach
-
-                <li class="nav-item">
-                    <a href="pages/gallery.html" class="nav-link">
-                        <i class="nav-icon fas fa-list"></i>
-                        <p>
-                            Dashboard
-                        </p>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
