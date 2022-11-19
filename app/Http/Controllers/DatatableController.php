@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\{User};
 use DB;
-use Auth;
 
-class UserController extends Controller
+class DatatableController extends Controller
 {
-    public function get(Request $req){
+    public function admin(Request $req){
         $array = DB::table('users')->select($req->select);
 
         // IF HAS SORT PARAMETER $ORDER
@@ -48,36 +47,5 @@ class UserController extends Controller
         }
 
         echo json_encode($array);
-    }
-
-    public function store(Request $req){
-        $data = new User();
-        $data->username = $req->username;
-        $data->fname = $req->fname;
-        $data->mname = $req->mname;
-        $data->lname = $req->lname;
-        $data->role = $req->role;
-        $data->email = $req->email;
-        $data->birthday = $req->birthday;
-        $data->gender = $req->gender;
-        $data->address = $req->address;
-        $data->contact = $req->contact;
-        $data->password = $req->password;
-
-        echo $data->save();
-    }
-
-    public function update(Request $req){
-        echo DB::table('users')->where('id', $req->id)->update($req->except(['id', '_token']));
-    }
-
-    public function updatePassword(Request $req){
-        $user = User::find(auth()->user()->id);
-        $user->password = $req->password;
-        $user->save();
-    }
-
-    private function _view($view, $data = array()){
-        return view('users.' . $view, $data);
     }
 }

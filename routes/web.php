@@ -13,9 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//JUST ADD '->defaults("group", "Settings")' IF YOU WANT TO GROUP A NAV IN A DROPDOWN
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/', function(){
+   return redirect()->route('login');
+});
 
 
 Route::group([
@@ -42,6 +48,17 @@ Route::group([
                 Route::post("store/", ucfirst($cname) . "Controller@store")->name('store');
                 Route::post("update/", ucfirst($cname) . "Controller@update")->name('update');
                 Route::post("updatePassword/", ucfirst($cname) . "Controller@updatePassword")->name('updatePassword');
+            }
+        );
+
+        // DATATABLES
+        $cname = "datatable";
+        Route::group([
+                'as' => "$cname.",
+                'prefix' => "$cname/"
+            ], function () use($cname){
+
+                Route::get("admin", ucfirst($cname) . "Controller@admin")->name('admin');
             }
         );
     }
