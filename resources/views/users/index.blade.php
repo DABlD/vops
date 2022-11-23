@@ -21,12 +21,10 @@
                     		<thead>
                     			<tr>
                     				<th>ID</th>
-                    				<th>First Name</th>
-                    				<th>Last Name</th>
+                    				<th>Name</th>
                     				<th>Username</th>
                     				<th>Email</th>
-                    				<th>Address</th>
-                    				<th>Contact</th>
+                    				<th>Role</th>
                     				<th>Actions</th>
                     			</tr>
                     		</thead>
@@ -46,13 +44,15 @@
 
 @push('styles')
 	<link rel="stylesheet" href="{{ asset('css/datatables.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/datatables.bootstrap4.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/datatables.bundle.min.css') }}">
+	{{-- <link rel="stylesheet" href="{{ asset('css/datatables.bootstrap4.min.css') }}"> --}}
 	{{-- <link rel="stylesheet" href="{{ asset('css/datatables-jquery.min.css') }}"> --}}
 @endpush
 
 @push('scripts')
 	<script src="{{ asset('js/datatables.min.js') }}"></script>
-	<script src="{{ asset('js/datatables.bootstrap4.min.js') }}"></script>
+	<script src="{{ asset('js/datatables.bundle.min.js') }}"></script>
+	{{-- <script src="{{ asset('js/datatables.bootstrap4.min.js') }}"></script> --}}
 	{{-- <script src="{{ asset('js/datatables-jquery.min.js') }}"></script> --}}
 
 	<script>
@@ -70,11 +70,9 @@
 				columns: [
 					{data: 'id'},
 					{data: 'fname'},
-					{data: 'lname'},
 					{data: 'username'},
 					{data: 'email'},
-					{data: 'address'},
-					{data: 'contact'},
+					{data: 'role'},
 					{data: 'actions'},
 				],
         		pageLength: 25,
@@ -101,10 +99,20 @@
 		function create(){
 			Swal.fire({
 				html: `
-	                ${input("name", "Name", null, 3, 9)}
+	                ${input("fname", "Name", null, 3, 9)}
 					${input("email", "Email", null, 3, 9, 'email')}
-	                ${input("contact", "Contact #", null, 3, 9)}
-	                ${input("address", "Address", null, 3, 9)}
+					<div class="row iRow">
+					    <div class="col-md-3 iLabel">
+					        Role
+					    </div>
+					    <div class="col-md-9 iInput">
+					        <select name="role" class="form-control">
+					        	<option value="Admin">Admin</option>
+					        	<option value="Coast Guard">Coast Guard</option>
+					        </select>
+					    </div>
+					</div>
+
 	                <br>
 	                ${input("username", "Username", null, 3, 9)}
 	                ${input("password", "Password", null, 3, 9, 'password')}
@@ -173,11 +181,9 @@
 						url: "{{ route('user.store') }}",
 						type: "POST",
 						data: {
-							name: $("[name='name']").val(),
+							fname: $("[name='fname']").val(),
 							email: $("[name='email']").val(),
-							contact: $("[name='contact']").val(),
-							address: $("[name='address']").val(),
-							role: "Admin",
+							role: $("[name='role']").val(),
 							username: $("[name='username']").val(),
 							password: $("[name='password']").val(),
 							_token: $('meta[name="csrf-token"]').attr('content')
@@ -191,17 +197,26 @@
 			});
 		}
 
-		function showDetails(admin){
+		function showDetails(user){
 			Swal.fire({
 				html: `
-	                ${input("id", "", admin.id, 3, 9, 'hidden')}
-	                ${input("name", "Name", admin.name, 3, 9)}
-					${input("email", "Email", admin.email, 3, 9, 'email')}
-	                ${input("contact", "Contact #", admin.contact, 3, 9)}
-	                ${input("address", "Address", admin.address, 3, 9)}
+	                ${input("id", "", user.id, 3, 9, 'hidden')}
+	                ${input("fname", "Name", user.fname, 3, 9)}
+					${input("email", "Email", user.email, 3, 9, 'email')}
+					<div class="row iRow">
+					    <div class="col-md-3 iLabel">
+					        Role
+					    </div>
+					    <div class="col-md-9 iInput">
+					        <select name="role" class="form-control">
+					        	<option value="Admin" ${user.role == "Admin" ? "Selected" : ""}>Admin</option>
+					        	<option value="Coast Guard" ${user.role == "Admin" ? "" : "Selected"}>Coast Guard</option>
+					        </select>
+					    </div>
+					</div>
+
 	                <br>
-	                ${input("username", "Username", admin.username, 3, 9)}
-	                ${input("login_link", "Login Link", "{{ url('login') }}" + admin.login_link, 3, 9, 'text', 'readonly')}
+	                ${input("username", "Username", user.username, 3, 9)}
 				`,
 				width: '800px',
 				confirmButtonText: 'Update',
@@ -226,7 +241,7 @@
             					},
             					success: result => {
             						result = JSON.parse(result);
-            						if(result.length && result[0].id != admin.id){
+            						if(result.length && result[0].id != user.id){
             			    			Swal.showValidationMessage('Email already used');
 	            						setTimeout(() => {resolve()}, 500);
             						}
@@ -239,7 +254,7 @@
 			            					},
 			            					success: result => {
 			            						result = JSON.parse(result);
-			            						if(result.length && result[0].id != admin.user.id){
+			            						if(result.length && result[0].id != user.id){
 			            			    			Swal.showValidationMessage('Username already used');
 				            						setTimeout(() => {resolve()}, 500);
 			            						}
@@ -260,10 +275,9 @@
 						url: "{{ route('user.update') }}",
 						data: {
 							id: $("[name='id']").val(),
-							name: $("[name='name']").val(),
+							role: $("[name='role']").val(),
+							fname: $("[name='fname']").val(),
 							email: $("[name='email']").val(),
-							address: $("[name='address']").val(),
-							contact: $("[name='contact']").val(),
 							username: $("[name='username']").val(),
 						},
 						message: "Success"
