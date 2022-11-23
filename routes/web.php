@@ -44,10 +44,33 @@ Route::group([
                 'as' => "$cname.",
                 'prefix' => "$cname/"
             ], function () use($cname){
+
+                Route::get("/", ucfirst($cname) . "Controller@index")
+                    ->defaults("sidebar", 1)
+                    ->defaults("icon", "fas fa-users")
+                    ->defaults("name", "Users")
+                    ->defaults("roles", array("Admin"))
+                    // ->defaults("group", "Settings")
+                    ->name($cname)
+                    ->defaults("href", "/$cname");
+
                 Route::get("get/", ucfirst($cname) . "Controller@get")->name('get');
                 Route::post("store/", ucfirst($cname) . "Controller@store")->name('store');
+                Route::post("restore/", ucfirst($cname) . "Controller@restore")->name('restore');
+                Route::post("delete/", ucfirst($cname) . "Controller@delete")->name('delete');
                 Route::post("update/", ucfirst($cname) . "Controller@update")->name('update');
                 Route::post("updatePassword/", ucfirst($cname) . "Controller@updatePassword")->name('updatePassword');
+            }
+        );
+
+        // LOCATION ROUTES
+        $cname = "theme";
+        Route::group([
+                'as' => "$cname.",
+                'prefix' => "$cname/"
+            ], function () use($cname){
+                Route::get("get/", ucfirst($cname) . "Controller@get")->name('get');
+                Route::post("update/", ucfirst($cname) . "Controller@update")->name('update');
             }
         );
 
@@ -58,7 +81,7 @@ Route::group([
                 'prefix' => "$cname/"
             ], function () use($cname){
 
-                Route::get("admin", ucfirst($cname) . "Controller@admin")->name('admin');
+                Route::get("user", ucfirst($cname) . "Controller@user")->name('user');
             }
         );
     }
