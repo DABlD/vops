@@ -18,12 +18,12 @@ class DatatableController extends Controller
 
         // IF HAS WHERE
         if($req->where){
-            $array = $array->where($req->where[0], $req->where[1], $req->where[2]);
+            $array = $array->where($req->where[0], isset($req->where[2]) ? $req->where[1] : "=", $req->where[2] ?? $req->where[1]);
         }
 
         // IF HAS WHERE2
         if($req->where2){
-            $array = $array->where($req->where2[0], $req->where2[1], $req->where2[2]);
+            $array = $array->where($req->where2[0], isset($req->where2[2]) ? $req->where2[1] : "=", $req->where2[2] ?? $req->where2[1]);
         }
 
         // IF HAS JOIN

@@ -64,7 +64,7 @@
                 	dataSrc: "",
 					data: {
 						select: "*",
-						// where: ["role", "!=", "Super Admin"],
+						where: ["role", "!=", "Super Admin"],
 					}
 				},
 				columns: [
