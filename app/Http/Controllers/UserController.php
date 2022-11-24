@@ -87,11 +87,11 @@ class UserController extends Controller
 
     public function index(){
         return $this->_view('index', [
-            'title' => 'Users'
+            'title' => ucfirst($this->table)
         ]);
     }
 
     private function _view($view, $data = array()){
-        return view($this->table .' . $view, $data);
+        return view("$this->table." ' . $view, $data);
     }
 }

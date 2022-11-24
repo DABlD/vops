@@ -48,7 +48,7 @@ Route::group([
                 Route::get("/", ucfirst($cname) . "Controller@index")
                     ->defaults("sidebar", 1)
                     ->defaults("icon", "fas fa-users")
-                    ->defaults("name", "Users")
+                    ->defaults("name", ucfirst($cname) . "s")
                     ->defaults("roles", array("Admin"))
                     // ->defaults("group", "Settings")
                     ->name($cname)
