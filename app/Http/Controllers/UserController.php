@@ -9,8 +9,12 @@ use Auth;
 
 class UserController extends Controller
 {
+    public function __construct(){
+        $this->table = "users";
+    }
+
     public function get(Request $req){
-        $array = DB::table('users')->select($req->select);
+        $array = DB::table($this->table)->select($req->select);
 
         // IF HAS SORT PARAMETER $ORDER
         if($req->order){
@@ -30,7 +34,7 @@ class UserController extends Controller
         // IF HAS JOIN
         if($req->join){
             $alias = substr($req->join, 1);
-            $array = $array->join("$req->join as $alias", "$alias.fid", '=', 'users.id');
+            $array = $array->join("$req->join as $alias", "$alias.fid", '=', "$this->table.id");
         }
 
         $array = $array->get();
@@ -68,16 +72,16 @@ class UserController extends Controller
     }
 
     public function update(Request $req){
-        echo DB::table('users')->where('id', $req->id)->update($req->except(['id', '_token']));
+        echo DB::table($this->table)->where('id', $req->id)->update($req->except(['id', '_token']));
     }
 
     public function updatePassword(Request $req){
-        $user = User::find(auth()->user()->id);
+        $user = User::find($req->id);
         $user->password = $req->password;
         $user->save();
     }
 
     private function _view($view, $data = array()){
-        return view('users.' . $view, $data);
+        return view($this->table .' . $view, $data);
     }
 }
