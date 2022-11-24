@@ -15,16 +15,31 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'username' => 'dmendoza',
+            'username' => 'sadmin',
+            'fname' => 'Super',
+            'mname' => 'Duper',
+            'lname' => 'Admin',
+            'role' => 'Super Admin',
+            'email' => 'superadmin@gmail.com',
+            'birthday' => null,
+            'gender' => 'Male',
+            'address' => 'Earth',
+            'contact' => null,
+            'email_verified_at' => now()->toDateTimeString(),
+            'password' => '654321'
+        ]);
+
+        User::create([
+            'username' => 'admin',
             'fname' => 'David',
             'mname' => 'Roga',
             'lname' => 'Mendoza',
             'role' => 'Admin',
             'email' => 'davidmendozaofficial@gmail.com',
-            'birthday' => '1997-11-12',
+            'birthday' => null,
             'gender' => 'Male',
-            'address' => 'Rm. 628, Park Avenue Mansions, Park Avenue St.,, Barangay 81',
-            'contact' => '09154590172',
+            'address' => null,
+            'contact' => null,
             'email_verified_at' => now()->toDateTimeString(),
             'password' => '123456'
         ]);

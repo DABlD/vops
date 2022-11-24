@@ -23,12 +23,12 @@ class UserController extends Controller
 
         // IF HAS WHERE
         if($req->where){
-            $array = $array->where($req->where[0], $req->where[1]);
+            $array = $array->where($req->where[0], isset($req->where[2]) ? $req->where[1] : "=", $req->where[2] ?? $req->where[1]);
         }
 
         // IF HAS WHERE2
-        if($req->where){
-            $array = $array->where($req->where2[0], $req->where2[1]);
+        if($req->where2){
+            $array = $array->where($req->where2[0], isset($req->where2[2]) ? $req->where2[1] : "=", $req->where2[2] ?? $req->where2[1]);
         }
 
         // IF HAS JOIN
@@ -79,6 +79,16 @@ class UserController extends Controller
         $user = User::find($req->id);
         $user->password = $req->password;
         $user->save();
+    }
+
+    public function delete(Request $req){
+        User::find($req->id)->delete();
+    }
+
+    public function index(){
+        return $this->_view('index', [
+            'title' => 'Users'
+        ]);
     }
 
     private function _view($view, $data = array()){
