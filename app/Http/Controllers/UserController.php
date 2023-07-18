@@ -92,6 +92,6 @@ class UserController extends Controller
     }
 
     private function _view($view, $data = array()){
-        return view("$this->table." ' . $view, $data);
+        return view("$this->table.$view", $data);
     }
 }
