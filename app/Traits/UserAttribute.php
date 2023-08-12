@@ -17,7 +17,7 @@ trait UserAttribute{
 					        "<i class='fas fa-search'></i>" .
 					    "</a>&nbsp;";
 
-			if($this->role == "Super Admin"){
+			if(auth()->user()->role == "Super Admin"){
 				$action .= 	"<a class='btn btn-primary' data-toggle='tooltip' title='Themes' onClick='themes($id)'>" .
 						        "<i class='fas fa-palette'></i>" .
 						    "</a>&nbsp;";	

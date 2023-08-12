@@ -49,7 +49,7 @@ Route::group([
                     ->defaults("sidebar", 1)
                     ->defaults("icon", "fas fa-users")
                     ->defaults("name", ucfirst($cname) . "s")
-                    ->defaults("roles", array("Admin"))
+                    ->defaults("roles", array("Super Admin", "Admin"))
                     // ->defaults("group", "Settings")
                     ->name($cname)
                     ->defaults("href", "/$cname");
@@ -63,7 +63,7 @@ Route::group([
             }
         );
 
-        // LOCATION ROUTES
+        // THEME ROUTES
         $cname = "theme";
         Route::group([
                 'as' => "$cname.",
