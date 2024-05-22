@@ -19,24 +19,25 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function(){
-   return redirect()->route('login');
-});
+// Route::get('/', function(){
+//    return redirect()->route('login');
+// });
 
+Route::get('/', "WelcomeController@index")->name("/");
 
 Route::group([
         'middleware' => 'auth',
     ], function() {
-        Route::get('/', "DashboardController@index")->name('dashboard');
+        // Route::get('/', "DashboardController@index")->name('dashboard');
 
 
-        Route::get('/', 'DashboardController@index')
+        Route::get('/dashboard', 'DashboardController@index')
             ->defaults('sidebar', 1)
             ->defaults('icon', 'fas fa-list')
             ->defaults('name', 'Dashboard')
             ->defaults('roles', array('Admin'))
             ->name('dashboard')
-            ->defaults('href', '/');
+            ->defaults('href', '/dashboard');
 
         // USER ROUTES
         $cname = "user";
