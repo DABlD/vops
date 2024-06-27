@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage &#8211; Assistalize</title>
+
+    <title>VOPS</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset("vops/logos/OPS_NO BG.png") }}">
+
     <meta name='robots' content='max-image-preview:large' />
     <link rel="alternate" type="application/rss+xml" title="Assistalize &raquo; Feed" href="https://tebewebe.online/assistalize/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Assistalize &raquo; Comments Feed" href="https://tebewebe.online/assistalize/comments/feed/" />
@@ -58,7 +61,7 @@
                     <div class="elementor-element elementor-element-3779ace e-con-full e-flex e-con e-child" data-id="3779ace" data-element_type="container">
                         <div class="elementor-element elementor-element-262bef9 elementor-invisible elementor-widget elementor-widget-image" data-id="262bef9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img fetchpriority="high" width="656" height="108" src="../../wp-content/uploads/sites/58/2023/11/Logo_assistalize_2.png" class="attachment-full size-full wp-image-64" alt="" srcset="https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/Logo_assistalize_2.png 656w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/Logo_assistalize_2-300x49.png 300w" sizes="(max-width: 656px) 100vw, 656px" />
+                                <img fetchpriority="high" src="{{ asset("vops/logos/OPS_NO BG.png") }}" class="attachment-full size-full wp-image-64"/>
                             </div>
                         </div>
                     </div>
@@ -284,7 +287,7 @@
                             <div class="elementor-divider">
                                 <span class="elementor-divider-separator">
                                     <h6 class="elementor-divider__text elementor-divider__element">
-                                        Introducing Assistalize </h6>
+                                        Welcome to Virtual OPS </h6>
                                 </span>
                             </div>
                         </div>
@@ -365,7 +368,9 @@
                             }
 
                             </style>
-                            <p>With our professional assistant you’ll be able to free up time in your day and focus on what you love.</p>
+                            <p>
+                            	Where we understand the unique demands of administrative tasks. Our tailored virtual excellence ensures a seamless workflow, enhancing productivity, and elevating efficiency in your office operations. Let our virtual ops solutions handle repetitive processes, allowing your team to focus on strategic priorities.
+                            </p>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-99f9b59 elementor-invisible elementor-widget elementor-widget-button" data-id="99f9b59" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="button.default">
@@ -387,17 +392,19 @@
                 <div class="elementor-element elementor-element-c4081d8 e-con-full e-flex e-con e-child" data-id="c4081d8" data-element_type="container">
                     <div class="elementor-element elementor-element-8f49bff elementor-invisible elementor-widget elementor-widget-heading" data-id="8f49bff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h6 class="elementor-heading-title elementor-size-default">About Assistalize</h6>
+                            <h6 class="elementor-heading-title elementor-size-default">About Virtual OPS</h6>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-1f6af0a elementor-invisible elementor-widget elementor-widget-heading" data-id="1f6af0a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">Simplify Your Work with a Virtual Assistant Company</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="text-align: justify;">Simplify Your Work with a Virtual Assistant Company</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-09568d3 elementor-widget elementor-widget-text-editor" data-id="09568d3" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            <p>Scelerisque elementum letius arcu ullamcorper accumsan penatibus. Dictum ornare quis congue penatibus blandit elit commodo luctus malesuada potenti risus.</p>
+                        <div class="elementor-widget-container" style="text-align: justify;">
+                            <p>
+                            	We are an excellent Philippine-based team that caters the needs of businesses since 2021. Established to assist, Virtual Ops’ asset is its highly skilled virtual assistants that handle a wide range of tasks. We pride ourselves on delivering personalized services tailored to meet the unique requirements of your business. At Virtual Ops, we understand the importance of flexibility and adaptability in the fast-paced business world. Our team ensures that you receive the best assistance hassle-free.
+                            </p>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-cfc87bb e-flex e-con-boxed e-con e-child" data-id="cfc87bb" data-element_type="container">
@@ -414,8 +421,9 @@
                                                 <span>
                                                     Increases Productivity </span>
                                             </h3>
-                                            <p class="elementor-icon-box-description">
-                                                Taciti maximus cras inceptos dapibus vulputate nascetur nam montes ornare. </p>
+                                            <p class="elementor-icon-box-description" style="text-align: justify;">
+                                            	Our virtual assistance services streamline administrative tasks, allowing you to focus on core business activities and boost productivity. With our skilled team handling your workload, you can achieve more in less time, enhancing efficiency and business growth.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -440,8 +448,9 @@
                                                 <span>
                                                     Save Your Time </span>
                                             </h3>
-                                            <p class="elementor-icon-box-description">
-                                                Taciti maximus cras inceptos dapibus vulputate nascetur nam montes ornare. </p>
+                                            <p class="elementor-icon-box-description" style="text-align: justify;">
+												Our virtual assistance services take care of time-consuming tasks, freeing you to focus on what matters most. With our efficient support, you can streamline operations and maximize your productive hours.
+											</p>
                                         </div>
                                     </div>
                                 </div>
@@ -534,7 +543,7 @@
                                     <div class="elementor-counter-title">Years Experience</div>
                                     <div class="elementor-counter-number-wrapper">
                                         <span class="elementor-counter-number-prefix"></span>
-                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="22" data-from-value="0" data-delimiter=",">0</span>
+                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="3" data-from-value="0" data-delimiter=",">0</span>
                                         <span class="elementor-counter-number-suffix">+</span>
                                     </div>
                                 </div>
