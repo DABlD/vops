@@ -50,6 +50,10 @@
     		vertical-align:middle;
     		display:inline-block
     	}
+
+        .elementor-element-bbd4363{
+            background-image: url('{{ asset('images/bg1.png') }}') !important;
+        }
     </style>
 </head>
 
@@ -124,13 +128,6 @@
         <div class="elementor-element elementor-element-bbd4363 e-flex e-con-boxed e-con e-parent" data-id="bbd4363" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="e-con-inner">
                 <div class="elementor-element elementor-element-d12f96c e-con-full e-flex e-con e-child" data-id="d12f96c" data-element_type="container">
-                    <div class="elementor-element elementor-element-80f6bf8 elementor-widget__width-initial elementor-widget elementor-widget-elementskit-lottie" data-id="80f6bf8" data-element_type="widget" data-widget_type="elementskit-lottie.default">
-                        <div class="elementor-widget-container">
-                            <div class="ekit-wid-con">
-                                <div id="ekit_lottie_80f6bf8" class="ekit_lottie" data-autoplay="true" data-on-scroll="" data-speed="0.8" data-direction="" data-action="" data-renderer="svg" data-path="https://lottie.host/53a73485-bf5c-4e64-a3a3-260f54d512c8/W4deZimDYP.json" data-loop="6">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="elementor-element elementor-element-b488c2d e-con-full e-flex e-con e-child" data-id="b488c2d" data-element_type="container">
                     <div class="elementor-element elementor-element-f50143f elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-invisible elementor-widget elementor-widget-divider" data-id="f50143f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="divider.default">
@@ -368,7 +365,7 @@
                             }
 
                             </style>
-                            <p>
+                            <p style="text-align: justify;">
                             	Where we understand the unique demands of administrative tasks. Our tailored virtual excellence ensures a seamless workflow, enhancing productivity, and elevating efficiency in your office operations. Let our virtual ops solutions handle repetitive processes, allowing your team to focus on strategic priorities.
                             </p>
                         </div>
