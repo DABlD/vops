@@ -54,6 +54,24 @@
         .elementor-element-bbd4363{
             background-image: url('{{ asset('images/bg1.png') }}') !important;
         }
+
+        .e-fas-check-circle{
+            width: 12px;
+            transform: scale(1.5);
+        }
+
+        .elementor-icon-list-item{
+            color: white;
+        }
+
+        .ekit-heading__description p{
+            text-align: justify;
+            font-size: 12px !important;
+        }
+
+        .ekit-wid-con .elementskit-infobox{
+            height: 450px;
+        }
     </style>
 </head>
 
@@ -76,15 +94,15 @@
                                         <i aria-hidden="true" class="ekit-menu-icon icon icon-menu-11"></i> </button>
                                     <div id="ekit-megamenu-header-menu" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default ekit-nav-menu-one-page-no ekit-nav-dropdown-hover">
                                         <ul id="menu-header-menu" class="elementskit-navbar-nav elementskit-menu-po-right submenu-click-on-icon">
-                                            <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-5 nav-item elementskit-mobile-builder-content active" data-vertical-menu=750px><a href="index.html" class="ekit-menu-nav-link active">Home</a></li>
-                                            <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/about-us/" class="ekit-menu-nav-link">About Us</a></li>
-                                            <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/services/" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Services<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+                                            {{-- <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-5 nav-item elementskit-mobile-builder-content active" data-vertical-menu=750px><a href="index.html" class="ekit-menu-nav-link active">Home</a></li> --}}
+                                            {{-- <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/about-us/" class="ekit-menu-nav-link">About Us</a></li> --}}
+                                            {{-- <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/services/" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Services<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
                                                 <ul class="elementskit-dropdown elementskit-submenu-panel">
                                                     <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/single-service/" class=" dropdown-item">Single Service</a>
                                                     <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/pricing-plan/" class=" dropdown-item">Pricing Plan</a>
                                                 </ul>
-                                            </li>
-                                            <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Pages<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+                                            </li> --}}
+                                            {{-- <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Pages<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
                                                 <ul class="elementskit-dropdown elementskit-submenu-panel">
                                                     <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/contact-us/" class=" dropdown-item">Contact Us</a>
                                                     <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/success-stories/" class=" dropdown-item">Success Stories</a>
@@ -92,7 +110,7 @@
                                                     <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/how-your-virtual-assistant-can-make-life-easier-in-2023/" class=" dropdown-item">Single Post</a>
                                                     <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://tebewebe.online/assistalize/template-kit/404-page/" class=" dropdown-item">404 Page</a>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                         <div class="elementskit-nav-identity-panel">
                                             <div class="elementskit-site-title">
@@ -113,7 +131,7 @@
                                 <div class="elementor-button-wrapper">
                                     <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
                                         <span class="elementor-button-content-wrapper">
-                                            <span class="elementor-button-text">Free Consultation</span>
+                                            <span class="elementor-button-text">Login</span>
                                         </span>
                                     </a>
                                 </div>
@@ -375,7 +393,7 @@
                             <div class="elementor-button-wrapper">
                                 <a class="elementor-button elementor-button-link elementor-size-md" href="#">
                                     <span class="elementor-button-content-wrapper">
-                                        <span class="elementor-button-text">Get Started</span>
+                                        <span class="elementor-button-text">Contact Us</span>
                                     </span>
                                 </a>
                             </div>
@@ -454,7 +472,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-7b53c71 e-flex e-con-boxed e-con e-child" data-id="7b53c71" data-element_type="container">
+                    {{-- <div class="elementor-element elementor-element-7b53c71 e-flex e-con-boxed e-con e-child" data-id="7b53c71" data-element_type="container">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-4af50ea elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="4af50ea" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
@@ -479,7 +497,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="elementor-element elementor-element-a80c7a9 e-con-full e-flex e-con e-child" data-id="a80c7a9" data-element_type="container">
                     <div class="elementor-element elementor-element-fef0ce0 e-con-full e-flex e-con e-child" data-id="fef0ce0" data-element_type="container">
@@ -574,10 +592,10 @@
                     </svg> </div>
                 <div class="elementor-element elementor-element-1389530 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="1389530" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h3 class="elementor-heading-title elementor-size-default">Trusted by 25,000+ world-class brands and organizations of all sizes</h3>
+                        <h3 class="elementor-heading-title elementor-size-default">Trusted by companies worldwide</h3>
                     </div>
                 </div>
-                <div class="elementor-element elementor-element-1e9da04 e-flex e-con-boxed e-con e-child" data-id="1e9da04" data-element_type="container">
+                {{-- <div class="elementor-element elementor-element-1e9da04 e-flex e-con-boxed e-con e-child" data-id="1e9da04" data-element_type="container">
                     <div class="e-con-inner">
                         <div class="elementor-element elementor-element-68327ec elementor-widget__width-initial e-transform elementor-invisible elementor-widget elementor-widget-image" data-id="68327ec" data-element_type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.1,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image.default">
                             <div class="elementor-widget-container">
@@ -616,7 +634,7 @@
                                 <img loading="lazy" decoding="async" width="300" height="100" src="{{ asset("vops/images/b2.png") }}" class="attachment-full size-full wp-image-1473" alt="" /> </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="elementor-element elementor-element-3fa66da e-flex e-con-boxed e-con e-parent" data-id="3fa66da" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -630,31 +648,10 @@
                         </div>
                         <div class="elementor-element elementor-element-77ff528 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="77ff528" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p>Facilisis habitant orci diam consequat lacinia finibus in porta dignissim dictumst. Porttitor nec sit dolor tempus fames id pulvinar rutrum pellentesque luctus. Lorem odio fringilla nulla adipiscing sociosqu magna orci pulvinar.</p>
+                                <p>At VOPS, we handle all your tasks with precision, from managing your calendar to organizing emails and more. Our efficient virtual assistant services ensure that nothing falls through the cracks. We proactively address challenges before they become problems, keeping everything running smoothly. Enjoy peace of mind knowing that every detail is taken care of, so you can focus on what truly matters.</p>
                             </div>
                         </div>
-                        <div class="elementor-element elementor-element-66361dd elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" data-id="66361dd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:240}" data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                                <ul class="elementor-icon-list-items elementor-inline-items">
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <span class="elementor-icon-list-icon">
-                                            <i aria-hidden="true" class="icon icon-checkmark"></i> </span>
-                                        <span class="elementor-icon-list-text">Give Easy Work</span>
-                                    </li>
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <span class="elementor-icon-list-icon">
-                                            <i aria-hidden="true" class="icon icon-checkmark"></i> </span>
-                                        <span class="elementor-icon-list-text">Flexible Saving Time</span>
-                                    </li>
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <span class="elementor-icon-list-icon">
-                                            <i aria-hidden="true" class="icon icon-checkmark"></i> </span>
-                                        <span class="elementor-icon-list-text">Best VA Services</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-906a2d0 elementor-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="906a2d0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="button.default">
+                        {{-- <div class="elementor-element elementor-element-906a2d0 elementor-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="906a2d0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
                                     <a class="elementor-button elementor-button-link elementor-size-md" href="#">
@@ -664,7 +661,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -682,7 +679,7 @@
                                 <div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
                                     <h5 class="ekit-heading--title elementskit-section-title ">Our Mission...</h5>
                                     <div class='ekit-heading__description'>
-                                        <p>Nam volutpat augue eleifend mollis pharetra feugiat placerat eu class phasellus taciti.</p>
+                                        <p>To catalyze global success by delivering exceptional Philippine-based virtual assistance services, blending cultural understanding, top-notch skills, and unparalleled dedication. We aim to exceed international client expectations, providing tailored solutions that drive efficiency, foster collaboration, and amplify their success in the dynamic global business landscape.</p>
                                     </div>
                                 </div>
                             </div>
@@ -702,7 +699,7 @@
                     </div>
                     <div class="elementor-element elementor-element-896c908 elementor-widget elementor-widget-text-editor" data-id="896c908" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            <p style="text-align: justify;">At the heart of economic growth and innovation lies a vibrant community of entrepreneurs and small business owners. We’re passionate about providing them with the tools, knowledge, and support they need to thrive. Together, we build dreams, create jobs, and shape a brighter future.</p>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-ade8aac e-flex e-con-boxed elementor-invisible e-con e-child" data-id="ade8aac" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
@@ -716,14 +713,14 @@
                                                     <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                     </svg> </span>
-                                                <span class="elementor-icon-list-text">Innovative</span>
+                                                <span class="elementor-icon-list-text">&nbsp;&nbsp;Confidentiality</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-3b63a1e elementor-widget elementor-widget-text-editor" data-id="3b63a1e" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Torquent ligula mattis efficitur venenatis eu nascetur. Conubia cubilia porttitor.</p>
+                                        <p> Trust is paramount. We handle sensitive information—financial records, client details, and proprietary data.</p>
                                     </div>
                                 </div>
                             </div>
@@ -736,14 +733,14 @@
                                                     <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                     </svg> </span>
-                                                <span class="elementor-icon-list-text">Real People</span>
+                                                <span class="elementor-icon-list-text">&nbsp;&nbsp;Skill Diversification</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-467a274 elementor-widget elementor-widget-text-editor" data-id="467a274" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Torquent ligula mattis efficitur venenatis eu nascetur. Conubia cubilia porttitor.</p>
+                                        <p>From Licensing, General Assistance to Social Media Management, and more...</p>
                                     </div>
                                 </div>
                             </div>
@@ -760,14 +757,14 @@
                                                     <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                     </svg> </span>
-                                                <span class="elementor-icon-list-text">Safe & Secure</span>
+                                                <span class="elementor-icon-list-text">&nbsp;&nbsp;Professionalism</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-f1592e8 elementor-widget elementor-widget-text-editor" data-id="f1592e8" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Torquent ligula mattis efficitur venenatis eu nascetur. Conubia cubilia porttitor.</p>
+                                        <p>Prompt responses, courteous communication, and a polished online presence.</p>
                                     </div>
                                 </div>
                             </div>
@@ -780,14 +777,14 @@
                                                     <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                                                     </svg> </span>
-                                                <span class="elementor-icon-list-text">100% Guarantee</span>
+                                                <span class="elementor-icon-list-text">&nbsp;&nbsp;Adaptability</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-f18c87b elementor-widget elementor-widget-text-editor" data-id="f18c87b" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Torquent ligula mattis efficitur venenatis eu nascetur. Conubia cubilia porttitor.</p>
+                                        <p>Seamlessly integrate into your existing systems. Whether it’s your CRM, management tools, or communication channels, we learn quickly.</p>
                                     </div>
                                 </div>
                             </div>
@@ -818,8 +815,8 @@
                 </div>
                 <div class="elementor-element elementor-element-1d552d8 e-flex e-con-boxed e-con e-child" data-id="1d552d8" data-element_type="container">
                     <div class="e-con-inner">
-                        <div class="elementor-element elementor-element-ecd5776 e-con-full e-flex e-con e-child" data-id="ecd5776" data-element_type="container">
-                            <div class="elementor-element elementor-element-79bddd1 e-transform ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box" data-id="79bddd1" data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="elementskit-icon-box.default">
+                        <div class="elementor-element elementor-element-0e58cd8 e-con-full e-flex elementor-invisible e-con e-child" data-id="0e58cd8" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:240}">
+                            <div class="elementor-element elementor-element-70f61ef e-transform ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="70f61ef" data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="elementskit-icon-box.default">
                                 <div class="elementor-widget-container">
                                     <div class="ekit-wid-con">
                                         <!-- link opening -->
@@ -833,17 +830,29 @@
                                             <div class="box-body">
                                                 <h3 class="elementskit-info-box-title">
                                                     Administrative Support </h3>
-                                                <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
+                                                <p>Unlock the power of optimized business support with our General Assistance services! Whether it’s crafting eye-catching flyers and posters, creating dynamic PowerPoint presentations from scratch or templates, or efficiently tracking recruits and promotions, we’ve got you covered.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-0e58cd8 e-con-full e-flex elementor-invisible e-con e-child" data-id="0e58cd8" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:240}">
+                            <div class="elementor-element elementor-element-70f61ef e-transform ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="70f61ef" data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="elementskit-icon-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="ekit-wid-con">
+                                        <!-- link opening -->
+                                        <!-- end link opening -->
+                                        <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-  gradient-active  hover_from_bottom">
+                                            <div class="elementskit-box-header elementor-animation-">
+                                                <div class="elementskit-info-box-icon  ">
+                                                    <i aria-hidden="true" class="elementkit-infobox-icon icon icon-document"></i>
                                                 </div>
+                                            </div>
+                                            <div class="box-body">
+                                                <h3 class="elementskit-info-box-title">
+                                                    Policy Virtual Assistance </h3>
+                                                <p>Boost your business with our Policy Virtual Assistance! We take care of data entry and expedite applications. Our dedicated team ensures a smooth underwriting process, simplified commissions, and thorough Annual Reviews. Stay ahead with detailed reporting for strategic decision-making.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -859,23 +868,13 @@
                                         <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-  gradient-active  hover_from_bottom">
                                             <div class="elementskit-box-header elementor-animation-">
                                                 <div class="elementskit-info-box-icon  ">
-                                                    <i aria-hidden="true" class="elementkit-infobox-icon icon icon-database1"></i>
+                                                    <i aria-hidden="true" class="elementkit-infobox-icon icon icon-license"></i>
                                                 </div>
                                             </div>
                                             <div class="box-body">
                                                 <h3 class="elementskit-info-box-title">
-                                                    Data Entry &amp; Organization </h3>
-                                                <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                    Licensing Virtual Assistance </h3>
+                                                <p>We’ll manage all state licensing mandates for you. We go the extra mile by ensuring compliance, securing carrier appointments, and offering ongoing support through monitoring recruits and licensed agents. Let us handle the details, so you can focus on your business success.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -891,29 +890,23 @@
                                         <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-  gradient-active  hover_from_bottom">
                                             <div class="elementskit-box-header elementor-animation-">
                                                 <div class="elementskit-info-box-icon  ">
-                                                    <i aria-hidden="true" class="elementkit-infobox-icon icon icon-Document-Search"></i>
+                                                    <i aria-hidden="true" class="elementkit-infobox-icon icon icon-social-share"></i>
                                                 </div>
                                             </div>
                                             <div class="box-body">
                                                 <h3 class="elementskit-info-box-title">
-                                                    Research And Analysis </h3>
-                                                <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                    Social Media Management</h3>
+                                                <p>Choose us for a dynamic online presence that makes a lasting impression! We create compelling content, plan and implement strategies aligned with your goals, and keep your audience engaged with the latest trends and SEO. Transform your social media into a powerful tool for business growth.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                {{-- <div class="elementor-element elementor-element-812ce0a e-flex e-con-boxed e-con e-child" data-id="812ce0a" data-element_type="container">
+                    <div class="e-con-inner">
                         <div class="elementor-element elementor-element-baf0556 e-con-full e-flex elementor-invisible e-con e-child" data-id="baf0556" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:720}">
                             <div class="elementor-element elementor-element-6dee9f1 e-transform ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="6dee9f1" data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="elementskit-icon-box.default">
                                 <div class="elementor-widget-container">
@@ -930,26 +923,12 @@
                                                 <h3 class="elementskit-info-box-title">
                                                     Calendar Management </h3>
                                                 <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-812ce0a e-flex e-con-boxed e-con e-child" data-id="812ce0a" data-element_type="container">
-                    <div class="e-con-inner">
                         <div class="elementor-element elementor-element-8f9f8cc e-con-full e-flex elementor-invisible e-con e-child" data-id="8f9f8cc" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:720}">
                             <div class="elementor-element elementor-element-62a71ad e-transform ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="62a71ad" data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="elementskit-icon-box.default">
                                 <div class="elementor-widget-container">
@@ -966,16 +945,6 @@
                                                 <h3 class="elementskit-info-box-title">
                                                     Email Management </h3>
                                                 <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -998,48 +967,6 @@
                                                 <h3 class="elementskit-info-box-title">
                                                     Travel Planning </h3>
                                                 <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-0e58cd8 e-con-full e-flex elementor-invisible e-con e-child" data-id="0e58cd8" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:240}">
-                            <div class="elementor-element elementor-element-70f61ef e-transform ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="70f61ef" data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="elementskit-icon-box.default">
-                                <div class="elementor-widget-container">
-                                    <div class="ekit-wid-con">
-                                        <!-- link opening -->
-                                        <!-- end link opening -->
-                                        <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-  gradient-active  hover_from_bottom">
-                                            <div class="elementskit-box-header elementor-animation-">
-                                                <div class="elementskit-info-box-icon  ">
-                                                    <i aria-hidden="true" class="elementkit-infobox-icon icon icon-document"></i>
-                                                </div>
-                                            </div>
-                                            <div class="box-body">
-                                                <h3 class="elementskit-info-box-title">
-                                                    Document Preparation </h3>
-                                                <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1062,16 +989,6 @@
                                                 <h3 class="elementskit-info-box-title">
                                                     Presentation Creation </h3>
                                                 <p>Mauris rhoncus aenean lacus elementum tempor parturient dapibus.</p>
-                                                <div class="box-footer disable_hover_button">
-                                                    <div class="btn-wraper">
-                                                        <a href="#" target="_self" rel="" class="elementskit-btn whitespace--normal elementor-animation-">
-                                                            Learn More
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1079,7 +996,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="elementor-element elementor-element-914c6ba e-flex e-con-boxed e-con e-parent" data-id="914c6ba" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1092,10 +1009,12 @@
                     </div>
                     <div class="elementor-element elementor-element-0171f86 elementor-widget elementor-widget-text-editor" data-id="0171f86" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>Primis elementum dictum elit dictumst semper. Turpis ornare quam vulputate erat ridiculus lorem auctor dis interdum tempus. Tellus morbi eget hendrerit dolor praesent vehicula.</p>
+                            <p style="text-align: justify;">
+                                Let’s approach the transition to our virtual assistance service with the elegance of a well-orchestrated symphony. We ensure a seamless and formal shift with 3 steps. Introduction and Alignment, Gradual delegation and Continuous Refinement. Remember, our virtual assistance service is here to orchestrate success, note by note.
+                            </p>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-cfd2e80 elementor-widget elementor-widget-button" data-id="cfd2e80" data-element_type="widget" data-widget_type="button.default">
+                    {{-- <div class="elementor-element elementor-element-cfd2e80 elementor-widget elementor-widget-button" data-id="cfd2e80" data-element_type="widget" data-widget_type="button.default">
                         <div class="elementor-widget-container">
                             <div class="elementor-button-wrapper">
                                 <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -1105,7 +1024,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -1117,8 +1036,8 @@
                             <div class="elementor-counter-title">Happy Clients</div>
                             <div class="elementor-counter-number-wrapper">
                                 <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="12" data-from-value="0" data-delimiter=",">0</span>
-                                <span class="elementor-counter-number-suffix">K+</span>
+                                <span class="elementor-counter-number" data-duration="2000" data-to-value="77" data-from-value="0" data-delimiter=",">0</span>
+                                <span class="elementor-counter-number-suffix"></span>
                             </div>
                         </div>
                     </div>
@@ -1137,8 +1056,8 @@
                             <div class="elementor-counter-title">Projects Completed</div>
                             <div class="elementor-counter-number-wrapper">
                                 <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="37" data-from-value="0" data-delimiter=",">0</span>
-                                <span class="elementor-counter-number-suffix">K</span>
+                                <span class="elementor-counter-number" data-duration="2000" data-to-value="77" data-from-value="0" data-delimiter=",">0</span>
+                                <span class="elementor-counter-number-suffix"></span>
                             </div>
                         </div>
                     </div>
@@ -1157,7 +1076,7 @@
                             <div class="elementor-counter-title">Years of Experience</div>
                             <div class="elementor-counter-number-wrapper">
                                 <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="22" data-from-value="0" data-delimiter=",">0</span>
+                                <span class="elementor-counter-number" data-duration="2000" data-to-value="4" data-from-value="0" data-delimiter=",">0</span>
                                 <span class="elementor-counter-number-suffix">+</span>
                             </div>
                         </div>
@@ -1177,7 +1096,7 @@
                             <div class="elementor-counter-title">Team Members</div>
                             <div class="elementor-counter-number-wrapper">
                                 <span class="elementor-counter-number-prefix"></span>
-                                <span class="elementor-counter-number" data-duration="2000" data-to-value="64" data-from-value="0" data-delimiter=",">0</span>
+                                <span class="elementor-counter-number" data-duration="2000" data-to-value="30" data-from-value="0" data-delimiter=",">0</span>
                                 <span class="elementor-counter-number-suffix">+</span>
                             </div>
                         </div>
@@ -1202,7 +1121,12 @@
                 <div class="elementor-element elementor-element-5278e96 e-con-full e-flex e-con e-child" data-id="5278e96" data-element_type="container">
                     <div class="elementor-element elementor-element-b1f5204 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="b1f5204" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:240}" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>Nulla letius nisi donec auctor nam penatibus vestibulum commodo habitasse integer adipiscing. Nunc taciti enim suspendisse facilisi ligula euismod malesuada eros adipiscing a. Finibus aptent nam euismod integer lobortis efficitur pretium nisi.</p>
+                            <p>
+                                Every success story begins with a simple request: “Can you handle this?” And our answer? An enthusiastic nod. From startup founders scaling their businesses to executives reclaiming work-life balance, our VAs have played pivotal roles. Their dedication, adaptability, and resourcefulness transform to-do lists into high-fives.
+
+                                <br><br>
+                                So step inside. Explore these narratives of resilience, innovation, and collaboration. Because success isn’t just about ticking boxes; it’s about the people who make it happen—the virtual assistants who turn your vision into reality.
+                            </p>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-f92f74b elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f92f74b" data-element_type="widget" data-widget_type="divider.default">
@@ -1220,18 +1144,20 @@
             <div class="e-con-inner">
                 <div class="elementor-element elementor-element-6525d99 e-flex e-con-boxed e-con e-child" data-id="6525d99" data-element_type="container">
                     <div class="e-con-inner">
-                        <div class="elementor-element elementor-element-df40dd0 e-con-full e-flex elementor-invisible e-con e-child" data-id="df40dd0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+                        <div class="elementor-element elementor-element-df40dd0 e-con-full e-flex elementor-invisible e-con e-child" data-id="df40dd0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}" style="background-image: url('{{ asset('images/Esmail-Rahim-e1706558131402-676x1024.webp') }}');">
                             <div class="elementor-element elementor-element-acadc22 elementor-widget elementor-widget-heading" data-id="acadc22" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h5 class="elementor-heading-title elementor-size-default">Fintech startup accelerates growth with fractional talent</h5>
+                                    <h5 class="elementor-heading-title elementor-size-default">Rahim Esmail</h5>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-6b2a4c3 elementor-widget elementor-widget-text-editor" data-id="6b2a4c3" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    <p>Taciti vestibulum aenean ridiculus nisi cubilia enim dignissim neque adipiscing consectetur.</p>
+                                    <p>
+                                        "I have been working with the Virtual ops team for a short time, but the experience I have received has been fantastic. I rely on their professionalism, confidentiality, and timely turnaround to help my business grow faster!"
+                                    </p>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-fc1f247 elementor-widget elementor-widget-button" data-id="fc1f247" data-element_type="widget" data-widget_type="button.default">
+                            {{-- <div class="elementor-element elementor-element-fc1f247 elementor-widget elementor-widget-button" data-id="fc1f247" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -1245,20 +1171,20 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
-                        <div class="elementor-element elementor-element-fd43dcd e-con-full e-flex elementor-invisible e-con e-child" data-id="fd43dcd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:240}">
+                        <div class="elementor-element elementor-element-fd43dcd e-con-full e-flex elementor-invisible e-con e-child" data-id="fd43dcd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:240}" style="background-image: url('{{ asset('images/Cramer-Joe-1024x1024.webp') }}')">
                             <div class="elementor-element elementor-element-c991799 elementor-widget elementor-widget-heading" data-id="c991799" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h5 class="elementor-heading-title elementor-size-default">ProPR is a technology platform to increase PR performance.</h5>
+                                    <h5 class="elementor-heading-title elementor-size-default">Joe Cramer</h5>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-a11fa92 elementor-widget elementor-widget-text-editor" data-id="a11fa92" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    <p>Taciti vestibulum aenean ridiculus nisi cubilia enim dignissim neque adipiscing consectetur.</p>
+                                    <p>"My Virtual Assistants do not play around and get things done daily. They are flexible and great at communication. They are amazing!"</p>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-fd66b32 elementor-widget elementor-widget-button" data-id="fd66b32" data-element_type="widget" data-widget_type="button.default">
+                            {{-- <div class="elementor-element elementor-element-fd66b32 elementor-widget elementor-widget-button" data-id="fd66b32" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -1272,20 +1198,20 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
-                        <div class="elementor-element elementor-element-fbbce34 e-con-full e-flex elementor-invisible e-con e-child" data-id="fbbce34" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:480}">
+                        <div class="elementor-element elementor-element-fbbce34 e-con-full e-flex elementor-invisible e-con e-child" data-id="fbbce34" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:480}" style="background-image: url('{{ asset('images/Love-Ro-Andrica.webp') }}');">
                             <div class="elementor-element elementor-element-032b020 elementor-widget elementor-widget-heading" data-id="032b020" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h5 class="elementor-heading-title elementor-size-default">Digital Transition: Tailored Virtual Assistant for Business</h5>
+                                    <h5 class="elementor-heading-title elementor-size-default">Rogelio & Andrica Love</h5>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-8a08b8e elementor-widget elementor-widget-text-editor" data-id="8a08b8e" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    <p>Taciti vestibulum aenean ridiculus nisi cubilia enim dignissim neque adipiscing consectetur.</p>
+                                    <p>"On top of everything.  Very professional, always knows what's due first and completes everything on time. Amazing team & very grateful!"</p>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-f68bcaf elementor-widget elementor-widget-button" data-id="f68bcaf" data-element_type="widget" data-widget_type="button.default">
+                            {{-- <div class="elementor-element elementor-element-f68bcaf elementor-widget elementor-widget-button" data-id="f68bcaf" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -1299,20 +1225,20 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
-                        <div class="elementor-element elementor-element-894e3de e-con-full e-flex elementor-invisible e-con e-child" data-id="894e3de" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:720}">
+                        <div class="elementor-element elementor-element-894e3de e-con-full e-flex elementor-invisible e-con e-child" data-id="894e3de" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:720}" style="background-image: url('{{ asset('images/Tomlin-David-Celina.webp') }}')">
                             <div class="elementor-element elementor-element-d36fff5 elementor-widget elementor-widget-heading" data-id="d36fff5" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h5 class="elementor-heading-title elementor-size-default">How Assistalize Helped Increasily Streamline Sales and Operations</h5>
+                                    <h5 class="elementor-heading-title elementor-size-default">David & Celina Tomlin</h5>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-b8fe73c elementor-widget elementor-widget-text-editor" data-id="b8fe73c" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    <p>Taciti vestibulum aenean ridiculus nisi cubilia enim dignissim neque adipiscing consectetur.</p>
+                                    <p>"My Virtual Assistant was exemplary in her role and did an incredible job. My social media sites look amazing and are very professional.</p>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-44fac25 elementor-widget elementor-widget-button" data-id="44fac25" data-element_type="widget" data-widget_type="button.default">
+                            {{-- <div class="elementor-element elementor-element-44fac25 elementor-widget elementor-widget-button" data-id="44fac25" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -1326,11 +1252,11 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
-                <div class="elementor-element elementor-element-a02712b e-flex e-con-boxed e-con e-child" data-id="a02712b" data-element_type="container">
+                {{-- <div class="elementor-element elementor-element-a02712b e-flex e-con-boxed e-con e-child" data-id="a02712b" data-element_type="container">
                     <div class="e-con-inner">
                         <div class="elementor-element elementor-element-9c12cef elementor-invisible elementor-widget elementor-widget-heading" data-id="9c12cef" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -1349,7 +1275,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="elementor-element elementor-element-5df35fc e-flex e-con-boxed e-con e-parent" data-id="5df35fc" data-element_type="container">
@@ -1370,7 +1296,8 @@
                                                     Dedicated Trained Virtual Assistant </span>
                                             </h3>
                                             <p class="elementor-icon-box-description">
-                                                A ad vulputate duis bibendum vestibulum quisque. </p>
+                                                {{-- A ad vulputate duis bibendum vestibulum quisque. --}}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1388,7 +1315,8 @@
                                                     Available Anytime 24/7 Supporting </span>
                                             </h3>
                                             <p class="elementor-icon-box-description">
-                                                A ad vulputate duis bibendum vestibulum quisque. </p>
+                                                {{-- A ad vulputate duis bibendum vestibulum quisque.  --}}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1410,7 +1338,8 @@
                                                     Contact via Phone, SMS, and Email </span>
                                             </h3>
                                             <p class="elementor-icon-box-description">
-                                                A ad vulputate duis bibendum vestibulum quisque. </p>
+                                                {{-- A ad vulputate duis bibendum vestibulum quisque. --}}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1420,15 +1349,16 @@
                                     <div class="elementor-icon-box-wrapper">
                                         <div class="elementor-icon-box-icon">
                                             <span class="elementor-icon elementor-animation-">
-                                                <i aria-hidden="true" class="icon icon-worker"></i> </span>
+                                                <i aria-hidden="true" class="icon icon-fast-forward"></i> </span>
                                         </div>
                                         <div class="elementor-icon-box-content">
                                             <h3 class="elementor-icon-box-title">
                                                 <span>
-                                                    Complimentary Kickstart Program </span>
+                                                    Timely Turnaround</span>
                                             </h3>
                                             <p class="elementor-icon-box-description">
-                                                A ad vulputate duis bibendum vestibulum quisque. </p>
+                                                {{-- A ad vulputate duis bibendum vestibulum quisque.  --}}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1449,259 +1379,24 @@
                     </div>
                     <div class="elementor-element elementor-element-1c70806 elementor-widget elementor-widget-text-editor" data-id="1c70806" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>Commodo montes fermentum integer leo pede facilisi consequat tempor pharetra ullamcorper inceptos. Morbi tortor sed vel senectus imperdiet risus aliquam proin blandit.</p>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-6978234 e-flex e-con-boxed e-con e-child" data-id="6978234" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-52d2b84 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="52d2b84" data-element_type="widget" data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="2000" height="1333" src="../../wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2.jpg" class="attachment-full size-full wp-image-939" alt="" srcset="https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2.jpg 2000w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2-300x200.jpg 300w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2-1024x682.jpg 1024w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2-768x512.jpg 768w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2-1536x1024.jpg 1536w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/arab-man-using-laptop-wearing-headset-sitting-at-desk2-800x533.jpg 800w" sizes="(max-width: 2000px) 100vw, 2000px" /> </div>
-                            </div>
-                            <div class="elementor-element elementor-element-bd5cf30 e-con-full e-flex e-con e-child" data-id="bd5cf30" data-element_type="container">
-                                <div class="elementor-element elementor-element-6c42950 elementor-widget elementor-widget-counter" data-id="6c42950" data-element_type="widget" data-widget_type="counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-counter">
-                                            <div class="elementor-counter-number-wrapper">
-                                                <span class="elementor-counter-number-prefix"></span>
-                                                <span class="elementor-counter-number" data-duration="2000" data-to-value="98" data-from-value="0" data-delimiter=",">0</span>
-                                                <span class="elementor-counter-number-suffix">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-3791a7c elementor-widget elementor-widget-elementskit-heading" data-id="3791a7c" data-element_type="widget" data-widget_type="elementskit-heading.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="ekit-wid-con">
-                                            <div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
-                                                <h5 class="ekit-heading--title elementskit-section-title ">Job Handled Success</h5>
-                                                <div class='ekit-heading__description'>
-                                                    <p>Ex pretium commodo porttitor semper in. Duis ridiculus in nisi posuere.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p style="text-align: justify;">Certainly! Our mission is to match you with the perfect virtual assistant (VA) tailored to your unique requirements. Whether it’s managing your schedule, handling customer inquiries, or organizing data, we ensure your VA is not just capable but also a seamless fit for your business rhythm.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="elementor-element elementor-element-751a7c7 e-flex e-con-boxed e-con e-parent" data-id="751a7c7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="e-con-inner">
-                <div class="elementor-element elementor-element-1b22b75 e-con-full e-flex elementor-invisible e-con e-child" data-id="1b22b75" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-                    <div class="elementor-element elementor-element-855635d elementor-widget elementor-widget-heading" data-id="855635d" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">Your Reliable Assistant, Anytime, Anywhere</h2>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-7830ffc elementor-widget elementor-widget-text-editor" data-id="7830ffc" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            <p>Primis elementum dictum elit dictumst semper. Turpis ornare quam vulputate erat ridiculus lorem auctor dis interdum tempus. Tellus morbi eget hendrerit dolor praesent vehicula.</p>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-67033d3 elementor-widget elementor-widget-button" data-id="67033d3" data-element_type="widget" data-widget_type="button.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-button-wrapper">
-                                <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
-                                    <span class="elementor-button-content-wrapper">
-                                        <span class="elementor-button-text">Discover More</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-602b178 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="602b178" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-982132b" data-id="982132b" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-15b7a3d elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="15b7a3d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">Latest Article</h2>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-2eae974 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="2eae974" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="button.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-xs" href="#">
-                                        <span class="elementor-button-content-wrapper">
-                                            <span class="elementor-button-text">All Article</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-9395475 elementor-invisible elementor-widget elementor-widget-elementskit-blog-posts" data-id="9395475" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="elementskit-blog-posts.default">
-                            <div class="elementor-widget-container">
-                                <div class="ekit-wid-con">
-                                    <div id="post-items--9395475" class="row post-items">
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="elementskit-post-image-card">
-                                                <div class="elementskit-entry-header">
-                                                    <a href="https://tebewebe.online/assistalize/why-an-outsourced-project-manager-is-great-for-business/" class="elementskit-entry-thumb">
-                                                        <img decoding="async" src="{{ asset('/vops/images/i1.jpg') }}" alt="Why an outsourced project manager is great for business">
-                                                    </a><!-- .elementskit-entry-thumb END -->
-                                                    <div class="elementskit-meta-categories">
-                                                        <span class="elementskit-meta-wraper">
-                                                            <span><a href="https://tebewebe.online/assistalize/category/business-growth/" rel="category tag">Business Growth</a></span>
-                                                        </span>
-                                                    </div>
-                                                </div><!-- .elementskit-entry-header END -->
-                                                <div class="elementskit-post-body ">
-                                                    <h2 class="entry-title">
-                                                        <a href="https://tebewebe.online/assistalize/why-an-outsourced-project-manager-is-great-for-business/">
-                                                            Why an outsourced project manager is great&hellip; </a>
-                                                    </h2>
-                                                    <div class="post-meta-list">
-                                                        <span class="meta-date">
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
-                                                            </svg>
-                                                            <span class="meta-date-text">
-                                                                November 16, 2023 </span>
-                                                        </span>
-                                                    </div>
-                                                    <p>At libero lobortis lorem volutpat dignissim donec fusce placerat pellentesque&hellip;</p>
-                                                    <div class="btn-wraper">
-                                                        <a class="elementskit-btn whitespace--normal" id="" href="https://tebewebe.online/assistalize/why-an-outsourced-project-manager-is-great-for-business/">
-                                                            Read More <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg> </a>
-                                                    </div>
-                                                </div><!-- .elementskit-post-body END -->
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="elementskit-post-image-card">
-                                                <div class="elementskit-entry-header">
-                                                    <a href="https://tebewebe.online/assistalize/how-your-virtual-assistant-can-make-life-easier-in-2023-2/" class="elementskit-entry-thumb">
-                                                        <img decoding="async" src="{{ asset('/vops/images/i2.jpg') }}" alt="How your Virtual Assistant can make life easier in 2023">
-                                                    </a><!-- .elementskit-entry-thumb END -->
-                                                    <div class="elementskit-meta-categories">
-                                                        <span class="elementskit-meta-wraper">
-                                                            <span><a href="https://tebewebe.online/assistalize/category/virtual-assistant/" rel="category tag">Virtual Assistant</a></span>
-                                                        </span>
-                                                    </div>
-                                                </div><!-- .elementskit-entry-header END -->
-                                                <div class="elementskit-post-body ">
-                                                    <h2 class="entry-title">
-                                                        <a href="https://tebewebe.online/assistalize/how-your-virtual-assistant-can-make-life-easier-in-2023-2/">
-                                                            How your Virtual Assistant can make life&hellip; </a>
-                                                    </h2>
-                                                    <div class="post-meta-list">
-                                                        <span class="meta-date">
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
-                                                            </svg>
-                                                            <span class="meta-date-text">
-                                                                November 16, 2023 </span>
-                                                        </span>
-                                                    </div>
-                                                    <p>At libero lobortis lorem volutpat dignissim donec fusce placerat pellentesque&hellip;</p>
-                                                    <div class="btn-wraper">
-                                                        <a class="elementskit-btn whitespace--normal" id="" href="https://tebewebe.online/assistalize/how-your-virtual-assistant-can-make-life-easier-in-2023-2/">
-                                                            Read More <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg> </a>
-                                                    </div>
-                                                </div><!-- .elementskit-post-body END -->
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="elementskit-post-image-card">
-                                                <div class="elementskit-entry-header">
-                                                    <a href="https://tebewebe.online/assistalize/top-time-saving-tips-for-email-and-diary-management/" class="elementskit-entry-thumb">
-                                                        <img decoding="async" src="{{ asset("vops/images/w2.jpg") }}" alt="w2">
-                                                    </a><!-- .elementskit-entry-thumb END -->
-                                                    <div class="elementskit-meta-categories">
-                                                        <span class="elementskit-meta-wraper">
-                                                            <span><a href="https://tebewebe.online/assistalize/category/management/" rel="category tag">Management</a></span>
-                                                        </span>
-                                                    </div>
-                                                </div><!-- .elementskit-entry-header END -->
-                                                <div class="elementskit-post-body ">
-                                                    <h2 class="entry-title">
-                                                        <a href="https://tebewebe.online/assistalize/top-time-saving-tips-for-email-and-diary-management/">
-                                                            Top time-saving tips for email and diary&hellip; </a>
-                                                    </h2>
-                                                    <div class="post-meta-list">
-                                                        <span class="meta-date">
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
-                                                            </svg>
-                                                            <span class="meta-date-text">
-                                                                November 16, 2023 </span>
-                                                        </span>
-                                                    </div>
-                                                    <p>At libero lobortis lorem volutpat dignissim donec fusce placerat pellentesque&hellip;</p>
-                                                    <div class="btn-wraper">
-                                                        <a class="elementskit-btn whitespace--normal" id="" href="https://tebewebe.online/assistalize/top-time-saving-tips-for-email-and-diary-management/">
-                                                            Read More <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg> </a>
-                                                    </div>
-                                                </div><!-- .elementskit-post-body END -->
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="elementskit-post-image-card">
-                                                <div class="elementskit-entry-header">
-                                                    <a href="https://tebewebe.online/assistalize/the-ultimate-guide-to-finding-a-virtual-assistant-service/" class="elementskit-entry-thumb">
-                                                        <img decoding="async" src="{{ asset('vops/images/p2.jpg') }}" alt="p2">
-                                                    </a><!-- .elementskit-entry-thumb END -->
-                                                    <div class="elementskit-meta-categories">
-                                                        <span class="elementskit-meta-wraper">
-                                                            <span><a href="https://tebewebe.online/assistalize/category/virtual-assistant/" rel="category tag">Virtual Assistant</a></span>
-                                                        </span>
-                                                    </div>
-                                                </div><!-- .elementskit-entry-header END -->
-                                                <div class="elementskit-post-body ">
-                                                    <h2 class="entry-title">
-                                                        <a href="https://tebewebe.online/assistalize/the-ultimate-guide-to-finding-a-virtual-assistant-service/">
-                                                            The ultimate guide to finding a Virtual&hellip; </a>
-                                                    </h2>
-                                                    <div class="post-meta-list">
-                                                        <span class="meta-date">
-                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
-                                                            </svg>
-                                                            <span class="meta-date-text">
-                                                                November 16, 2023 </span>
-                                                        </span>
-                                                    </div>
-                                                    <p>At libero lobortis lorem volutpat dignissim donec fusce placerat pellentesque&hellip;</p>
-                                                    <div class="btn-wraper">
-                                                        <a class="elementskit-btn whitespace--normal" id="" href="https://tebewebe.online/assistalize/the-ultimate-guide-to-finding-a-virtual-assistant-service/">
-                                                            Read More <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-circle-right" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
-                                                            </svg> </a>
-                                                    </div>
-                                                </div><!-- .elementskit-post-body END -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
         <div data-elementor-type="wp-post" data-elementor-id="421" class="elementor elementor-421">
             <div class="elementor-element elementor-element-4a68a74 e-flex e-con-boxed e-con e-parent" data-id="4a68a74" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-ac594f1 e-flex e-con-boxed e-con e-child" data-id="ac594f1" data-element_type="container">
-                        <div class="e-con-inner">
+                        <div class="e-con-inner" style="padding: 10px;">
                             <div class="elementor-element elementor-element-51fe0d3 e-con-full e-flex elementor-invisible e-con e-child" data-id="51fe0d3" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
                                 <div class="elementor-element elementor-element-e2b31e0 elementor-widget elementor-widget-image" data-id="e2b31e0" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img width="656" height="108" src="../../wp-content/uploads/sites/58/2023/11/Logo_assistalize_2.png" class="attachment-full size-full wp-image-64" alt="" srcset="https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/Logo_assistalize_2.png 656w, https://tebewebe.online/assistalize/wp-content/uploads/sites/58/2023/11/Logo_assistalize_2-300x49.png 300w" sizes="(max-width: 656px) 100vw, 656px" /> </div>
+                                        <img width="600px" src="{{ 'vops/logos/OPS_NO BG2.png' }}" class="attachment-full size-full wp-image-64"/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-977b23d elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="977b23d" data-element_type="widget" data-widget_type="divider.default">
@@ -1725,7 +1420,7 @@
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-md" href="#">
                                                 <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">Get Started</span>
+                                                    <span class="elementor-button-text">Contact Us</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -1739,12 +1434,7 @@
                             <div class="elementor-element elementor-element-a1eeb63 e-con-full e-flex e-con e-child" data-id="a1eeb63" data-element_type="container">
                                 <div class="elementor-element elementor-element-b767bf6 elementor-widget elementor-widget-heading" data-id="b767bf6" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">Who We Are</h2>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-421786e elementor-widget elementor-widget-text-editor" data-id="421786e" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        <p>Venenatis vitae quis maecenas habitasse fames nascetur. Leo parturient suscipit nisi urna dictumst dis.</p>
+                                        <h2 class="elementor-heading-title elementor-size-default">Social Media Links</h2>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-33974da e-grid-align-left e-grid-align-mobile-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="33974da" data-element_type="widget" data-widget_type="social-icons.default">
@@ -2059,22 +1749,22 @@
                                         </style>
                                         <div class="elementor-social-icons-wrapper elementor-grid">
                                             <span class="elementor-grid-item">
-                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-facebook elementor-animation-float elementor-repeater-item-65eca73" href="#" target="_blank">
+                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-facebook elementor-animation-float elementor-repeater-item-65eca73" href="https://www.facebook.com/profile.php?id=100090983393124" target="_blank">
                                                     <span class="elementor-screen-only">Icon-facebook</span>
                                                     <i class="icon icon-facebook"></i> </a>
                                             </span>
                                             <span class="elementor-grid-item">
-                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-twitter elementor-animation-float elementor-repeater-item-67f2e2e" href="#" target="_blank">
+                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-twitter elementor-animation-float elementor-repeater-item-67f2e2e">
                                                     <span class="elementor-screen-only">Icon-twitter</span>
                                                     <i class="icon icon-twitter"></i> </a>
                                             </span>
                                             <span class="elementor-grid-item">
-                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-linkedin elementor-animation-float elementor-repeater-item-77b84fc" href="#" target="_blank">
+                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-linkedin elementor-animation-float elementor-repeater-item-77b84fc">
                                                     <span class="elementor-screen-only">Icon-linkedin</span>
                                                     <i class="icon icon-linkedin"></i> </a>
                                             </span>
                                             <span class="elementor-grid-item">
-                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-instagram-1 elementor-animation-float elementor-repeater-item-418b6ab" href="#" target="_blank">
+                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-icon-instagram-1 elementor-animation-float elementor-repeater-item-418b6ab">
                                                     <span class="elementor-screen-only">Icon-instagram-1</span>
                                                     <i class="icon icon-instagram-1"></i> </a>
                                             </span>
@@ -2082,7 +1772,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-3b4d300 e-con-full e-flex e-con e-child" data-id="3b4d300" data-element_type="container">
+                            {{-- <div class="elementor-element elementor-element-3b4d300 e-con-full e-flex e-con e-child" data-id="3b4d300" data-element_type="container">
                                 <div class="elementor-element elementor-element-b0ec1ac elementor-widget elementor-widget-heading" data-id="b0ec1ac" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">Company</h2>
@@ -2119,7 +1809,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="elementor-element elementor-element-4263ab5 e-con-full e-flex e-con e-child" data-id="4263ab5" data-element_type="container">
                                 <div class="elementor-element elementor-element-f22c6c8 elementor-widget elementor-widget-heading" data-id="f22c6c8" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
@@ -2141,17 +1831,12 @@
                                             </li>
                                             <li class="elementor-icon-list-item">
                                                 <a href="#">
-                                                    <span class="elementor-icon-list-text">Marketing</span>
+                                                    <span class="elementor-icon-list-text">Licensing</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
                                                 <a href="#">
-                                                    <span class="elementor-icon-list-text">Event Planning</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="#">
-                                                    <span class="elementor-icon-list-text">Writing & Editing</span>
+                                                    <span class="elementor-icon-list-text">Policy</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -2164,23 +1849,23 @@
                                         <h2 class="elementor-heading-title elementor-size-default">Get In Touch</h2>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-fdaec39 elementor-widget elementor-widget-heading" data-id="fdaec39" data-element_type="widget" data-widget_type="heading.default">
+                                {{-- <div class="elementor-element elementor-element-fdaec39 elementor-widget elementor-widget-heading" data-id="fdaec39" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-heading-title elementor-size-default">Blue Diamond Tower, 789 Oak St, Smalltown, TX 23456, United States</div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="elementor-element elementor-element-e0849cc elementor-tablet-align-center elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e0849cc" data-element_type="widget" data-widget_type="icon-list.default">
                                     <div class="elementor-widget-container">
                                         <ul class="elementor-icon-list-items">
                                             <li class="elementor-icon-list-item">
                                                 <span class="elementor-icon-list-icon">
                                                     <i aria-hidden="true" class="icon icon-envelope2"></i> </span>
-                                                <span class="elementor-icon-list-text">info@yourdomain.com</span>
+                                                <span class="elementor-icon-list-text">office@virtualops.org</span>
                                             </li>
                                             <li class="elementor-icon-list-item">
                                                 <span class="elementor-icon-list-icon">
                                                     <i aria-hidden="true" class="icon icon-phone1"></i> </span>
-                                                <span class="elementor-icon-list-text">(555) 987-6543</span>
+                                                <span class="elementor-icon-list-text">(+63) 123-4567</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -2194,7 +1879,7 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-7163f61 elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="7163f61" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <div class="elementor-heading-title elementor-size-default">Copyright © 2023 Assistalize by TBWBThemes</div>
+                            <div class="elementor-heading-title elementor-size-default">Copyright © 2024 VOPS</div>
                         </div>
                     </div>
                 </div>
