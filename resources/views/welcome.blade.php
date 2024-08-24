@@ -129,7 +129,7 @@
                         <div class="elementor-element elementor-element-091ea26 elementor-align-left elementor-tablet-align-right elementor-invisible elementor-widget elementor-widget-button" data-id="091ea26" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ route('login') }}">
                                         <span class="elementor-button-content-wrapper">
                                             <span class="elementor-button-text">Login</span>
                                         </span>

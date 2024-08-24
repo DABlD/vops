@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Theme;
 use DB;
+// use Intervention\Image\Laravel\Facades\Image;
 use Image;
 
 class ThemeController extends Controller
@@ -45,19 +46,19 @@ class ThemeController extends Controller
     }
 
     public function update(Request $req){
-        // $aid = $req->admin_id;
-        // $themes = $req->except('logo_img', 'login_banner_img', 'login_bg_img', '_token', 'admin_id');
-        $themes = $req->except('logo_img', 'login_banner_img', 'login_bg_img', '_token');
+        $aid = $req->admin_id;
+        $themes = $req->except('logo_img', 'login_banner_img', 'login_bg_img', '_token', 'admin_id');
+        // $themes = $req->except('logo_img', 'login_banner_img', 'login_bg_img', '_token');
+
         foreach($themes as $key => $theme){
-            // $temp = Theme::where('name', $key)->where('admin_id', $aid)->first();
-            $temp = Theme::where('name', $key)->first();
+            $temp = Theme::where('name', $key)->where('admin_id', $aid)->first();
             $temp->value = $theme;
             $temp->save();
         }
 
         if($req->hasFile('logo_img')){
-            // $theme = Theme::where('name', 'logo_img')->where('admin_id', $aid)->first();
-            $theme = Theme::where('name', 'logo_img')->first();
+            $theme = Theme::where('name', 'logo_img')->where('admin_id', $aid)->first();
+            // $theme = Theme::where('name', 'logo_img')->first();
 
             $temp = $req->file('logo_img');
             $image = Image::make($temp);
@@ -70,8 +71,8 @@ class ThemeController extends Controller
             $theme->save();
         }
         if($req->hasFile('login_banner_img')){
-            // $theme = Theme::where('name', 'login_banner_img')->where('admin_id', $aid)->first();
-            $theme = Theme::where('name', 'login_banner_img')->first();
+            $theme = Theme::where('name', 'login_banner_img')->where('admin_id', $aid)->first();
+            // $theme = Theme::where('name', 'login_banner_img')->first();
 
             $temp = $req->file('login_banner_img');
             $image = Image::make($temp);
@@ -84,8 +85,8 @@ class ThemeController extends Controller
             $theme->save();
         }
         if($req->hasFile('login_bg_img')){
-            // $theme = Theme::where('name', 'login_bg_img')->where('admin_id', $aid)->first();
-            $theme = Theme::where('name', 'login_bg_img')->first();
+            $theme = Theme::where('name', 'login_bg_img')->where('admin_id', $aid)->first();
+            // $theme = Theme::where('name', 'login_bg_img')->first();
 
             $temp = $req->file('login_bg_img');
             $image = Image::make($temp);

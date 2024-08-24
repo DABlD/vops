@@ -413,10 +413,10 @@
 		        body: formData,
 		    }).then(result => {
 		        console.log(result);
-		        ss("Successfully Updated Theme", "Refreshing");
 		        setTimeout(() => {
+		        	ss("Successfully Updated Theme", "Refreshing");
 		            // window.location.reload();
-		        }, 1200);
+		        }, 500);
 		    });
 		}
 	</script>
