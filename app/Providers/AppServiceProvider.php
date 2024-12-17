@@ -25,8 +25,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer('*',function($view) {
-            $theme = DB::table('themes');
-            $view->with('theme', $theme->pluck('value', 'name'));
+            if(auth()->user()){
+                $theme = DB::table('themes');
+                $view->with('theme', $theme->pluck('value', 'name'));
+            }
 
             // if(isset(auth()->user()->role)){
             //     $theme = $theme->where('admin_id', auth()->user()->admin_id ?? auth()->user()->id);
