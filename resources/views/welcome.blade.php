@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>VOPS</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset("vops/logos/OPS_NO BG.png") }}">
+    <title>Prolific</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset("vops/logos/prolific.png") }}">
 
     <meta name='robots' content='max-image-preview:large' />
     <link rel="alternate" type="application/rss+xml" title="Assistalize &raquo; Feed" href="https://tebewebe.online/assistalize/feed/" />
@@ -83,7 +83,7 @@
                     <div class="elementor-element elementor-element-3779ace e-con-full e-flex e-con e-child" data-id="3779ace" data-element_type="container">
                         <div class="elementor-element elementor-element-262bef9 elementor-invisible elementor-widget elementor-widget-image" data-id="262bef9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img fetchpriority="high" src="{{ asset("vops/logos/OPS_NO BG.png") }}" class="attachment-full size-full wp-image-64"/>
+                                <img fetchpriority="high" src="{{ asset("vops/logos/prolific.png") }}" class="attachment-full size-full wp-image-64"/>
                             </div>
                         </div>
                     </div>
@@ -302,7 +302,7 @@
                             <div class="elementor-divider">
                                 <span class="elementor-divider-separator">
                                     <h6 class="elementor-divider__text elementor-divider__element">
-                                        Welcome to Virtual OPS </h6>
+                                        Welcome to Prolific </h6>
                                 </span>
                             </div>
                         </div>
@@ -384,7 +384,7 @@
 
                             </style>
                             <p style="text-align: justify;">
-                            	Where we understand the unique demands of administrative tasks. Our tailored virtual excellence ensures a seamless workflow, enhancing productivity, and elevating efficiency in your office operations. Let our virtual ops solutions handle repetitive processes, allowing your team to focus on strategic priorities.
+                            	Where we understand the unique demands of administrative tasks. Our tailored virtual excellence ensures a seamless workflow, enhancing productivity, and elevating efficiency in your office operations. Let our prolific solutions handle repetitive processes, allowing your team to focus on strategic priorities.
                             </p>
                         </div>
                     </div>
@@ -407,7 +407,7 @@
                 <div class="elementor-element elementor-element-c4081d8 e-con-full e-flex e-con e-child" data-id="c4081d8" data-element_type="container">
                     <div class="elementor-element elementor-element-8f49bff elementor-invisible elementor-widget elementor-widget-heading" data-id="8f49bff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h6 class="elementor-heading-title elementor-size-default">About Virtual OPS</h6>
+                            <h6 class="elementor-heading-title elementor-size-default">About Prolific</h6>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-1f6af0a elementor-invisible elementor-widget elementor-widget-heading" data-id="1f6af0a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
@@ -418,7 +418,7 @@
                     <div class="elementor-element elementor-element-09568d3 elementor-widget elementor-widget-text-editor" data-id="09568d3" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container" style="text-align: justify;">
                             <p>
-                            	We are an excellent Philippine-based team that caters the needs of businesses since 2021. Established to assist, Virtual Ops’ asset is its highly skilled virtual assistants that handle a wide range of tasks. We pride ourselves on delivering personalized services tailored to meet the unique requirements of your business. At Virtual Ops, we understand the importance of flexibility and adaptability in the fast-paced business world. Our team ensures that you receive the best assistance hassle-free.
+                            	We are an excellent team that caters the needs of businesses since 2021. Established to assist, Prolific's asset is its highly skilled virtual assistants that handle a wide range of tasks. We pride ourselves on delivering personalized services tailored to meet the unique requirements of your business. At Prolific, we understand the importance of flexibility and adaptability in the fast-paced business world. Our team ensures that you receive the best assistance hassle-free.
                             </p>
                         </div>
                     </div>
@@ -648,7 +648,7 @@
                         </div>
                         <div class="elementor-element elementor-element-77ff528 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="77ff528" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p>At VOPS, we handle all your tasks with precision, from managing your calendar to organizing emails and more. Our efficient virtual assistant services ensure that nothing falls through the cracks. We proactively address challenges before they become problems, keeping everything running smoothly. Enjoy peace of mind knowing that every detail is taken care of, so you can focus on what truly matters.</p>
+                                <p>At Prolific, we handle all your tasks with precision, from managing your calendar to organizing emails and more. Our efficient virtual assistant services ensure that nothing falls through the cracks. We proactively address challenges before they become problems, keeping everything running smoothly. Enjoy peace of mind knowing that every detail is taken care of, so you can focus on what truly matters.</p>
                             </div>
                         </div>
                         {{-- <div class="elementor-element elementor-element-906a2d0 elementor-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="906a2d0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="button.default">
@@ -1153,7 +1153,7 @@
                             <div class="elementor-element elementor-element-6b2a4c3 elementor-widget elementor-widget-text-editor" data-id="6b2a4c3" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
                                     <p>
-                                        "I have been working with the Virtual ops team for a short time, but the experience I have received has been fantastic. I rely on their professionalism, confidentiality, and timely turnaround to help my business grow faster!"
+                                        "I have been working with the Prolific team for a short time, but the experience I have received has been fantastic. I rely on their professionalism, confidentiality, and timely turnaround to help my business grow faster!"
                                     </p>
                                 </div>
                             </div>
@@ -1395,7 +1395,7 @@
                             <div class="elementor-element elementor-element-51fe0d3 e-con-full e-flex elementor-invisible e-con e-child" data-id="51fe0d3" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
                                 <div class="elementor-element elementor-element-e2b31e0 elementor-widget elementor-widget-image" data-id="e2b31e0" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                        <img width="600px" src="{{ 'vops/logos/OPS_NO BG2.png' }}" class="attachment-full size-full wp-image-64"/>
+                                        <img width="600px" src="{{ 'vops/logos/prolific.png' }}" class="attachment-full size-full wp-image-64"/>
                                     </div>
                                 </div>
                             </div>
@@ -1879,7 +1879,7 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-7163f61 elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="7163f61" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <div class="elementor-heading-title elementor-size-default">Copyright © 2024 VOPS</div>
+                            <div class="elementor-heading-title elementor-size-default">Copyright © 2024 Prolific</div>
                         </div>
                     </div>
                 </div>
