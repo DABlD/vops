@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="{{ asset('/vops/css/widget-icon-box.min.css') }}">
     <link rel='stylesheet' id='google-fonts-1-css' href='{{ asset('/vops/font/poppins.css') }}' media='all' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+
     <script src="{{ asset('/vops/js/jquery.min.js') }}" id="jquery-core-js"></script>
     <script src="{{ asset('/vops/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
 
@@ -1891,6 +1893,8 @@
     <link rel='stylesheet' id='mediaelement-css' href='{{ asset('/vops/css/wp-mediaelement-legacy.min.css') }}' media='all' />
     <link rel='stylesheet' id='wp-mediaelement-css' href='{{ asset('/vops/css/wp-mediaelement.min.css') }}' media='all' />
     <link rel='stylesheet' id='e-animations-css' href='{{ asset('/vops/css/animations.min.css') }}' media='all' />
+
+    <script type="module" src="{{ asset('js/cookieconsent-config.js') }}"></script>
     <script src="{{ asset('vops/js/cute-alert.min.js') }}" id="cute-alert-js"></script>
     <script src="{{ asset('/vops/js/hello-frontend.min.js') }}" id="hello-theme-frontend-js"></script>
     <script src="{{ asset('/vops/js/widget-scripts.js') }}" id="ekit-widget-scripts-js"></script>
