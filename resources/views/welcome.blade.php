@@ -681,7 +681,7 @@
                                 <div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
                                     <h5 class="ekit-heading--title elementskit-section-title ">Our Mission...</h5>
                                     <div class='ekit-heading__description'>
-                                        <p>To catalyze global success by delivering exceptional Philippine-based virtual assistance services, blending cultural understanding, top-notch skills, and unparalleled dedication. We aim to exceed international client expectations, providing tailored solutions that drive efficiency, foster collaboration, and amplify their success in the dynamic global business landscape.</p>
+                                        <p>To catalyze global success by delivering exceptional virtual assistance services, blending cultural understanding, top-notch skills, and unparalleled dedication. We aim to exceed international client expectations, providing tailored solutions that drive efficiency, foster collaboration, and amplify their success in the dynamic global business landscape.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1030,7 +1030,10 @@
                 </div>
             </div>
         </div>
-        <div class="elementor-element elementor-element-7fa0ae2 e-flex e-con-boxed e-con e-child" data-id="7fa0ae2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+
+        {{-- STATISTICS --}}
+
+        {{-- <div class="elementor-element elementor-element-7fa0ae2 e-flex e-con-boxed e-con e-child" data-id="7fa0ae2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="e-con-inner">
                 <div class="elementor-element elementor-element-890cb4a elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-counter" data-id="890cb4a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:240}" data-widget_type="counter.default">
                     <div class="elementor-widget-container">
@@ -1105,7 +1108,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+
+        {{-- END STATISTICS --}}
         <div class="elementor-element elementor-element-361e998 e-flex e-con-boxed e-con e-parent" data-id="361e998" data-element_type="container">
             <div class="e-con-inner">
                 <div class="elementor-element elementor-element-d5aeaef e-con-full e-flex e-con e-child" data-id="d5aeaef" data-element_type="container">
@@ -1862,12 +1867,12 @@
                                             <li class="elementor-icon-list-item">
                                                 <span class="elementor-icon-list-icon">
                                                     <i aria-hidden="true" class="icon icon-envelope2"></i> </span>
-                                                <span class="elementor-icon-list-text">office@virtualops.org</span>
+                                                <span class="elementor-icon-list-text">dk.prolificoperations@gmail.com</span>
                                             </li>
                                             <li class="elementor-icon-list-item">
                                                 <span class="elementor-icon-list-icon">
                                                     <i aria-hidden="true" class="icon icon-phone1"></i> </span>
-                                                <span class="elementor-icon-list-text">(+63) 123-4567</span>
+                                                <span class="elementor-icon-list-text">(323) 486-3288</span>
                                             </li>
                                         </ul>
                                     </div>
