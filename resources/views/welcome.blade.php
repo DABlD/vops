@@ -32,7 +32,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 
-    <script src="{{ asset('/vops/js/jquery.min.js') }}" id="jquery-core-js"></script>
+
+    <link rel='stylesheet' href='{{ asset('/css/sweetalert2.min.css') }}' />
+    <script src="{{ asset('/js/sweetalert2.min.js') }}"></script>
+
+    <script src="{{ asset('js/jquery.min.js') }}" id="jquery-core-js"></script>
     <script src="{{ asset('/vops/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
 
 	<style>
@@ -73,6 +77,11 @@
 
         .ekit-wid-con .elementskit-infobox{
             height: 450px;
+        }
+
+        .swal2-container .mf-input-wrapper{
+            text-align: left !important;
+            margin-top: 10px !important;
         }
     </style>
 </head>
@@ -393,7 +402,7 @@
                     <div class="elementor-element elementor-element-99f9b59 elementor-invisible elementor-widget elementor-widget-button" data-id="99f9b59" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:720}" data-widget_type="button.default">
                         <div class="elementor-widget-container">
                             <div class="elementor-button-wrapper">
-                                <a class="elementor-button elementor-button-link elementor-size-md" href="#">
+                                <a class="elementor-button elementor-button-link elementor-size-md contactus" href="#">
                                     <span class="elementor-button-content-wrapper">
                                         <span class="elementor-button-text">Contact Us</span>
                                     </span>
@@ -1421,11 +1430,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-2c8d05e e-con-full e-flex elementor-invisible e-con e-child" data-id="2c8d05e" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-                                <div class="elementor-element elementor-element-d66b883 elementor-align-right elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="d66b883" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-element elementor-element-2c8d05e e-con-full e-flex elementor-invisible e-con e-child">
+                                <div class="elementor-element elementor-element-d66b883 elementor-align-right elementor-mobile-align-left elementor-widget elementor-widget-button">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
-                                            <a class="elementor-button elementor-button-link elementor-size-md" href="#">
+                                            <a class="elementor-button elementor-button-link elementor-size-md contactus">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-text">Contact Us</span>
                                                 </span>
@@ -1918,6 +1927,128 @@
     <script src="{{ asset('/vops/js/elementor.js') }}" id="elementskit-elementor-js"></script>
     <script src="{{ asset('/vops/js/lottie.min.js') }}" id="lottie-js"></script>
     <script src="{{ asset('/vops/js/lottie.init.js') }}" id="lottie-init-js"></script>
+
+    <script>
+        $('.contactus').on('click', e => {
+            Swal.fire({
+                title: "Contact Us",
+                confirmButtonText: "Send Message",
+                confirmButtonColor: "#009cd5",
+                cancelButtonColor: "#EB6D56",
+                showCancelButton: true,
+                html: `
+                    <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
+                        <div class="elementor-widget-container"><div class="mf-input-wrapper">
+                            <label class="mf-input-label" for="mf-input-text-ded8fda">
+                                Your Name
+                                <span class="mf-input-required-indicator"></span>
+                            </label>
+                            <input type="text" class="mf-input " id="cu-name" name="mf-your-name" placeholder="Your name " aria-invalid="false">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
+                        <div class="elementor-widget-container"><div class="mf-input-wrapper">
+                            <label class="mf-input-label" for="mf-input-text-ded8fda">
+                                Phone
+                                <span class="mf-input-required-indicator"></span>
+                            </label>
+                            <input type="text" class="mf-input " id="cu-phone" name="mf-your-name" placeholder="Phone" aria-invalid="false">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
+                        <div class="elementor-widget-container"><div class="mf-input-wrapper">
+                            <label class="mf-input-label" for="mf-input-text-ded8fda">
+                                Email
+                                <span class="mf-input-required-indicator"></span>
+                            </label>
+                            <input type="text" class="mf-input " id="cu-email" name="mf-your-name" placeholder="Email" aria-invalid="false">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
+                        <div class="elementor-widget-container"><div class="mf-input-wrapper">
+                            <label class="mf-input-label" for="mf-input-text-ded8fda">
+                                Subject
+                                <span class="mf-input-required-indicator"></span>
+                            </label>
+                            <input type="text" class="mf-input " id="cu-subject" name="mf-your-name" placeholder="Subject" aria-invalid="false">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mf-input-wrapper">
+                        <label class="mf-input-label" for="mf-input-text-area-efc6953">
+                            Message                    
+                            <span class="mf-input-required-indicator"></span>
+                        </label>
+
+                        <textarea class="mf-input mf-textarea " id="cu-message" name="mf-message" placeholder="Your message " cols="30" rows="10" aria-invalid="false" style="height: 178px;">
+                        </textarea>
+                    </div>
+
+                    <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
+                        <div class="elementor-widget-container"><div class="mf-input-wrapper">
+                            <label class="mf-input-label" for="mf-input-text-ded8fda" style="text-align: justify;">
+                                <input type="checkbox" id="cu-consent">
+                                By providing my contact information to Prolific, I acknowledge and expressly consent to receive communications via SMS and email for various purposes, including but not limited to marketing and promotional content. I retain the option to opt-out at any time by replying STOP.
+                            </label>
+                        </div>
+                    </div>
+                `,
+                preConfirm: () => {
+                    let name = $('#cu-name').val();
+                    let phone = $('#cu-phone').val();
+                    let email = $('#cu-email').val();
+                    let subject = $('#cu-subject').val();
+                    let message = $('#cu-message').val();
+                    let consent = $('#cu-consent').is(":checked");
+
+                    if(name == "" || phone == "" || email == "" || subject == "" || message == ""){
+                        Swal.showValidationMessage("Please fill all details");
+                    }
+                    else if(!consent){
+                        Swal.showValidationMessage("You must agree and check that you give consent to use your contact information.");
+                    }
+                }
+            }).then(result => {
+                let name = $('#cu-name').val();
+                let phone = $('#cu-phone').val();
+                let email = $('#cu-email').val();
+                let subject = $('#cu-subject').val();
+                let message = $('#cu-message').val();
+                let consent = $('#cu-consent').is(":checked");
+
+                if(result){
+                    $.ajax({
+                        url: "{{ route('sendEmail') }}",
+                        data: {
+                            name: name,
+                            phone: phone,
+                            email: email,
+                            subject: subject,
+                            message: message,
+                            consent: 1
+                        },
+                        success: result => {
+                            if(result){
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Successfully sent message",
+                                    text: "Thank you for reaching out. We've received your message and will get back to you as promptly as possible. Your patience is greatly appreciated.",
+                                    confirmButtonColor: "#009cd5"
+                                })
+                            }
+                        }
+                    })
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
