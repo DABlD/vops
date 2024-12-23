@@ -31,7 +31,7 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="{{ asset('vops/logos/OPS_NO BG.png') }}" width="500" height="300" alt="IMG">
+					<img src="{{ asset('vops/logos/prolific.png') }}" width="500" height="300" alt="IMG">
 				</div>
 
 				<form class="login100-form validate-form" method="POST" action="{{ route('login'); }}">
