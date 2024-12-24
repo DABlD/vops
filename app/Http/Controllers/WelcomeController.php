@@ -31,7 +31,7 @@ class WelcomeController extends Controller
             $mail->Port = 587;                          // port - 587/465
 
             $mail->setFrom('virtualopsdonotreply@gmail.com', 'VOPS NO REPLY');
-            $mail->addAddress($req->email);
+            $mail->addAddress('dk.prolificoperations@gmail.com');
 
             $mail->isHTML(true);                // Set email content format to HTML
 
@@ -39,6 +39,7 @@ class WelcomeController extends Controller
 
             $mail->Body    = "
                 Name: $req->name <br>
+                Email: $req->email <br>
                 Phone: $req->phone <br><br>
 
                 Message: $req->message
