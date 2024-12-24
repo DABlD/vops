@@ -25,12 +25,12 @@ class WelcomeController extends Controller
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';             //  smtp host
             $mail->SMTPAuth = true;
-            $mail->Username = 'info@onehealthnetwork.com.ph';   //  sender username
-            $mail->Password = '1nf0P@55w0rd';       // sender password
-            $mail->SMTPSecure = 'tls';                  // encryption - ssl/tls
+            $mail->Username = env('MAIL_USERNAME');   //  sender username
+            $mail->Password = env('MAIL_PASSWORD');       // sender password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // encryption - ssl/tls
             $mail->Port = 587;                          // port - 587/465
 
-            $mail->setFrom('transit.qr@gmail.com', 'QR ADMIN');
+            $mail->setFrom('virtualopsdonotreply@gmail.com', 'VOPS NO REPLY');
             $mail->addAddress($req->email);
 
             $mail->isHTML(true);                // Set email content format to HTML
@@ -38,8 +38,8 @@ class WelcomeController extends Controller
             $mail->Subject = $req->subject;
 
             $mail->Body    = "
-                Name: $req->name,
-                Phone: $req->phone,
+                Name: $req->name <br>
+                Phone: $req->phone <br><br>
 
                 Message: $req->message
             ";
