@@ -1816,28 +1816,20 @@
                                         <h2 class="elementor-heading-title elementor-size-default">Services</h2>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-c57c226 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c57c226" data-element_type="widget" data-widget_type="icon-list.default">
+                                <div class="" data-id="c57c226" data-element_type="widget" data-widget_type="icon-list.default">
                                     <div class="elementor-widget-container">
                                         <ul class="elementor-icon-list-items">
                                             <li class="elementor-icon-list-item">
-                                                <a>
-                                                    <span class="elementor-icon-list-text">Administrative</span>
-                                                </a>
+                                                <span class="elementor-icon-list-text">Administrative</span>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a>
-                                                    <span class="elementor-icon-list-text">Social Media</span>
-                                                </a>
+                                                <span class="elementor-icon-list-text">Social Media</span>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a>
-                                                    <span class="elementor-icon-list-text">Licensing</span>
-                                                </a>
+                                                <span class="elementor-icon-list-text">Licensing</span>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a>
-                                                    <span class="elementor-icon-list-text">Policy</span>
-                                                </a>
+                                                <span class="elementor-icon-list-text">Policy</span>
                                             </li>
                                         </ul>
                                     </div>
