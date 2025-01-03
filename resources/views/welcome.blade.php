@@ -1920,6 +1920,8 @@
                 confirmButtonColor: "#009cd5",
                 cancelButtonColor: "#EB6D56",
                 showCancelButton: true,
+                width: "700px",
+                allowOutsideClick: false,
                 html: `
                     <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
                         <div class="elementor-widget-container"><div class="mf-input-wrapper">
@@ -1977,14 +1979,18 @@
 
                     <div class="elementor-element elementor-element-ded8fda elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-mf-text" data-id="ded8fda" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-your-name&quot;}" data-widget_type="mf-text.default">
                         <div class="elementor-widget-container"><div class="mf-input-wrapper">
+                            <b>Sign up for SMS Alerts</b>
                             <label class="mf-input-label" for="mf-input-text-ded8fda" style="text-align: justify; text-transform: unset;">
                                 <input type="checkbox" id="cu-consent">
-                                By providing my contact information to Prolific, I acknowledge and expressly consent to receive communications via SMS and email for various purposes, including but not limited to marketing and promotional content. I retain the option to opt-out at any time by replying STOP. For more details, please refer to our Privacy Policy.
+                                By checking this box, you give consent to <b>Prolific Brand Corp.</b> to send you SMS about <b>appointment reminders, account notifications and any relevant information</b>. I acknowledge that my consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for assistance or STOP to opt out of receiving messages. <a style="color: blue;" href="{{ route('privacy-policy') }}" target="_blank">Privacy Policy</a> and <a style="color: blue;" href="{{ route('terms-and-conditions') }}" target="_blank">Terms</a>
                             </label>
 
+                            <br>
+                            <br>
+                            <b>Sign Up for Email and Phone Calls</b>
                             <label class="mf-input-label" for="mf-input-text-ded8fda" style="text-align: justify; text-transform: unset;">
                                 <input type="checkbox" id="cu-consent2">
-                                I agree to the <a style="color: blue;" href="{{ route('terms-and-conditions') }}" target="_blank">Terms</a> and <a style="color: blue;" href="{{ route('privacy-policy') }}" target="_blank">Privacy Policy</a>
+                                I agree to receive emails and phone calls.
                             </label>
                         </div>
                     </div>
