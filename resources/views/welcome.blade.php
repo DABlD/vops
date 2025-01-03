@@ -1787,44 +1787,29 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="elementor-element elementor-element-3b4d300 e-con-full e-flex e-con e-child" data-id="3b4d300" data-element_type="container">
+                            <div class="elementor-element elementor-element-3b4d300 e-con-full e-flex e-con e-child" data-id="3b4d300" data-element_type="container">
                                 <div class="elementor-element elementor-element-b0ec1ac elementor-widget elementor-widget-heading" data-id="b0ec1ac" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">Company</h2>
+                                        <h2 class="elementor-heading-title elementor-size-default">Documents</h2>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-dc9c55d elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="dc9c55d" data-element_type="widget" data-widget_type="icon-list.default">
                                     <div class="elementor-widget-container">
                                         <ul class="elementor-icon-list-items">
                                             <li class="elementor-icon-list-item">
-                                                <a href="#">
-                                                    <span class="elementor-icon-list-text">About us</span>
+                                                <a href="{{ route('privacy-policy') }}" target="_blank">
+                                                    <span class="elementor-icon-list-text">Privacy Policy</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="#">
-                                                    <span class="elementor-icon-list-text">Leadership</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="#">
-                                                    <span class="elementor-icon-list-text">Careers</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="#">
-                                                    <span class="elementor-icon-list-text">Article & News</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="#">
-                                                    <span class="elementor-icon-list-text">Legal Notices</span>
+                                                <a href="{{ route('terms-and-conditions') }}" target="_blank">
+                                                    <span class="elementor-icon-list-text">Terms and Conditions</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                             <div class="elementor-element elementor-element-4263ab5 e-con-full e-flex e-con e-child" data-id="4263ab5" data-element_type="container">
                                 <div class="elementor-element elementor-element-f22c6c8 elementor-widget elementor-widget-heading" data-id="f22c6c8" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
