@@ -25,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "WelcomeController@index")->name("/");
 Route::get('/sendEmail', "WelcomeController@sendEmail")->name("sendEmail");
+Route::get('/terms-and-conditions', "WelcomeController@terms")->name("terms-and-conditions");
+Route::get('/privacy-policy', "WelcomeController@privacy")->name("privacy-policy");
 
 Route::group([
         'middleware' => 'auth',

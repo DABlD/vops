@@ -15,6 +15,18 @@ class WelcomeController extends Controller
         ]);
     }
 
+    public function terms(){
+        return $this->_view('terms', [
+            'title' => "Virtual OPS",
+        ]);
+    }
+
+    public function privacy(){
+        return $this->_view('privacy', [
+            'title' => "Virtual OPS",
+        ]);
+    }
+
     public function sendEmail(Request $req){
         require base_path("vendor/autoload.php");
 
