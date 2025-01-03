@@ -37,8 +37,8 @@ class WelcomeController extends Controller
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';             //  smtp host
             $mail->SMTPAuth = true;
-            $mail->Username = env('MAIL_USERNAME');   //  sender username
-            $mail->Password = env('MAIL_PASSWORD');       // sender password
+            $mail->Username = "virtualopsdonotreply@gmail.com";   //  sender username
+            $mail->Password = "UaA8p4TuXdSfF2T";       // sender password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // encryption - ssl/tls
             $mail->Port = 587;                          // port - 587/465
 
