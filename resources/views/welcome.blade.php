@@ -1996,12 +1996,13 @@
                     let subject = $('#cu-subject').val();
                     let message = $('#cu-message').val();
                     let consent = $('#cu-consent').is(":checked");
+                    let consent2 = $('#cu-consent2').is(":checked");
 
                     if(name == "" || phone == "" || email == "" || subject == "" || message == ""){
                         Swal.showValidationMessage("Please fill all details");
                     }
-                    else if(!consent){
-                        Swal.showValidationMessage("You must agree and check that you give consent to use your contact information.");
+                    else if(!consent || !consent2){
+                        Swal.showValidationMessage("You must agree and check that you give consent to use your contact information and our privacy policy.");
                     }
                 }
             }).then(result => {
