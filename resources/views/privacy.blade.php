@@ -214,16 +214,7 @@
                                 <br>
                                 <b>Do we share the information we collect with third parties?</b>
                                 <br>
-                                we respect your privacy and are committed to protecting your personal information. We do not share, sell, or trade your personal data to third parties without your consent, except in the following circumstances:
-                                <br>
-                                <br>
-                                Service Providers: We may share your information with trusted third-party service providers who assist us in operating our website, conducting business, or providing services to you. These third parties are required to protect your information and use it solely for the purposes for which it was shared.
-                                <br>
-                                <br>
-                                Legal Requirements: We may disclose your information when required to do so by law, such as to comply with a subpoena or similar legal process.
-                                <br>
-                                <br>
-                                Business Transfers: In the event of a merger, acquisition, or sale of our company, your information may be transferred as part of the transaction, subject to the applicable privacy policies.
+                                We respect your privacy and are committed to protecting your personal information. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
                                 <br>
                                 <br>
                                 <b>Where and when is information collected from customers and end users?</b>
