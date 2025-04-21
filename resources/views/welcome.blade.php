@@ -1974,7 +1974,7 @@
                             <b>Sign up for SMS Alerts</b>
                             <label class="mf-input-label" for="mf-input-text-ded8fda" style="text-align: justify; text-transform: unset;">
                                 <input type="checkbox" id="cu-consent">
-                                By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. Reply Help for more information. You can reply STOP to opt-out of further messaging and Please refer to our Privacy Policy and terms, <a target="_blank" href="https://vops.alwaysdata.net/privacy-policy">https://vops.alwaysdata.net/privacy-policy</a>
+                                By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. Reply Help for more information. You can reply STOP to opt-out of further messaging and Please refer to our Privacy Policy and terms, <a target="_blank" style="color: blue;" href="https://vops.alwaysdata.net/privacy-policy">https://vops.alwaysdata.net/privacy-policy</a>
                             </label>
 
                             <br>
