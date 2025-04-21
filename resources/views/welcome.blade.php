@@ -1974,7 +1974,7 @@
                             <b>Sign up for SMS Alerts</b>
                             <label class="mf-input-label" for="mf-input-text-ded8fda" style="text-align: justify; text-transform: unset;">
                                 <input type="checkbox" id="cu-consent">
-                                By checking this box, you give consent to <b>Prolific Brand Corp.</b> to send you SMS about <b>appointment reminders, account notifications and any relevant information</b>. I acknowledge that my consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for assistance or STOP to opt out of receiving messages. <a style="color: blue;" href="{{ route('privacy-policy') }}" target="_blank">Privacy Policy</a> and <a style="color: blue;" href="{{ route('terms-and-conditions') }}" target="_blank">Terms</a>
+                                By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. Reply Help for more information. You can reply STOP to opt-out of further messaging and Please refer to our Privacy Policy and terms, https://vops.alwaysdata.net/privacy-policy 
                             </label>
 
                             <br>
